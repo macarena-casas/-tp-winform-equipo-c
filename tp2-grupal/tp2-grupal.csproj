@@ -48,11 +48,11 @@
   <ItemGroup>
     <Compile Include="Articulos.cs" />
     <Compile Include="Categoria.cs" />
-    <Compile Include="Frmprincipal.cs">
+    <Compile Include="FArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frmprincipal.Designer.cs">
-      <DependentUpon>Frmprincipal.cs</DependentUpon>
+    <Compile Include="FArticulos.Designer.cs">
+      <DependentUpon>FArticulos.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_principal.cs">
       <SubType>Form</SubType>
@@ -64,8 +64,11 @@
     <Compile Include="marcas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frmprincipal.resx">
-      <DependentUpon>Frmprincipal.cs</DependentUpon>
+    <EmbeddedResource Include="FArticulos.resx">
+      <DependentUpon>FArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_principal.resx">
+      <DependentUpon>Frm_principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
