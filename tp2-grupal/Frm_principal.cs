@@ -22,5 +22,16 @@ namespace tp2_grupal
             FArticulos FArt = new FArticulos();
             FArt.Show();
         }
+
+        private void btn_marcas_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(Frm_marcas))
+                    return;
+            }
+            Frm_marcas Fmarca = new Frm_marcas();
+            Fmarca.Show();
+        }
     }
 }
