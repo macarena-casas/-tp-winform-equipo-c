@@ -33,5 +33,16 @@ namespace tp2_grupal
             Frm_marcas Fmarca = new Frm_marcas();
             Fmarca.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void b_categorias_Click(object sender, EventArgs e)
+        {
+            Frm_categorias Fcate = new Frm_categorias();
+            Fcate.Show();
+        }
     }
 }
