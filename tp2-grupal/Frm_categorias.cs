@@ -16,5 +16,15 @@ namespace tp2_grupal
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void b_volver_c_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -28,98 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.b_eliminar_m = new System.Windows.Forms.Button();
+            this.b_agregar_m = new System.Windows.Forms.Button();
+            this.b_listar_m = new System.Windows.Forms.Button();
+            this.b_volve_m = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // b_eliminar_m
             // 
-            this.button1.AccessibleRole = System.Windows.Forms.AccessibleRole.Sound;
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 5;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(184, 218);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Eliminar marca";
-            this.button1.UseVisualStyleBackColor = false;
+            this.b_eliminar_m.AccessibleRole = System.Windows.Forms.AccessibleRole.Sound;
+            this.b_eliminar_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.b_eliminar_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.b_eliminar_m.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_eliminar_m.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.b_eliminar_m.FlatAppearance.BorderSize = 5;
+            this.b_eliminar_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.b_eliminar_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
+            this.b_eliminar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_eliminar_m.Location = new System.Drawing.Point(225, 213);
+            this.b_eliminar_m.Name = "b_eliminar_m";
+            this.b_eliminar_m.Size = new System.Drawing.Size(122, 45);
+            this.b_eliminar_m.TabIndex = 0;
+            this.b_eliminar_m.Text = "Eliminar marca";
+            this.b_eliminar_m.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // b_agregar_m
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.BorderSize = 5;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(184, 42);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 45);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Agregar marca";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.b_agregar_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.b_agregar_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.b_agregar_m.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_agregar_m.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.b_agregar_m.FlatAppearance.BorderSize = 5;
+            this.b_agregar_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.b_agregar_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
+            this.b_agregar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_agregar_m.Location = new System.Drawing.Point(225, 46);
+            this.b_agregar_m.Name = "b_agregar_m";
+            this.b_agregar_m.Size = new System.Drawing.Size(122, 45);
+            this.b_agregar_m.TabIndex = 1;
+            this.b_agregar_m.Text = "Agregar marca";
+            this.b_agregar_m.UseVisualStyleBackColor = false;
+            this.b_agregar_m.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // b_listar_m
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.BorderSize = 5;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(184, 132);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 45);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Listar marcas";
-            this.button3.UseVisualStyleBackColor = false;
+            this.b_listar_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.b_listar_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.b_listar_m.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_listar_m.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.b_listar_m.FlatAppearance.BorderSize = 5;
+            this.b_listar_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.b_listar_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
+            this.b_listar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_listar_m.Location = new System.Drawing.Point(225, 123);
+            this.b_listar_m.Name = "b_listar_m";
+            this.b_listar_m.Size = new System.Drawing.Size(122, 45);
+            this.b_listar_m.TabIndex = 2;
+            this.b_listar_m.Text = "Listar marcas";
+            this.b_listar_m.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // b_volve_m
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button4.FlatAppearance.BorderSize = 5;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(184, 295);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 41);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Volver ";
-            this.button4.UseVisualStyleBackColor = false;
+            this.b_volve_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.b_volve_m.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_volve_m.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.b_volve_m.FlatAppearance.BorderSize = 5;
+            this.b_volve_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.b_volve_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
+            this.b_volve_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_volve_m.Location = new System.Drawing.Point(225, 295);
+            this.b_volve_m.Name = "b_volve_m";
+            this.b_volve_m.Size = new System.Drawing.Size(122, 45);
+            this.b_volve_m.TabIndex = 3;
+            this.b_volve_m.Text = "Volver ";
+            this.b_volve_m.UseVisualStyleBackColor = false;
+            this.b_volve_m.Click += new System.EventHandler(this.b_volve_m_Click);
             // 
             // Frm_marcas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(506, 369);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.Controls.Add(this.b_volve_m);
+            this.Controls.Add(this.b_listar_m);
+            this.Controls.Add(this.b_agregar_m);
+            this.Controls.Add(this.b_eliminar_m);
             this.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(522, 408);
-            this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(522, 408);
+            this.MaximumSize = new System.Drawing.Size(600, 500);
+            this.MinimumSize = new System.Drawing.Size(600, 500);
             this.Name = "Frm_marcas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_marcas";
             this.ResumeLayout(false);
 
@@ -127,9 +129,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button b_eliminar_m;
+        private System.Windows.Forms.Button b_agregar_m;
+        private System.Windows.Forms.Button b_listar_m;
+        private System.Windows.Forms.Button b_volve_m;
     }
 }

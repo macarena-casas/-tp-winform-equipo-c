@@ -82,6 +82,9 @@
     <EmbeddedResource Include="frm-marcas.resx">
       <DependentUpon>frm-marcas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_categorias.resx">
+      <DependentUpon>Frm_categorias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_principal.resx">
       <DependentUpon>Frm_principal.cs</DependentUpon>
     </EmbeddedResource>

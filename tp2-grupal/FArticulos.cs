@@ -19,7 +19,13 @@ namespace tp2_grupal
 
         private void b_Detalles_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("detalles");
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+           Close();
         }
     }
 }

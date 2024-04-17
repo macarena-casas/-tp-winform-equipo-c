@@ -73,7 +73,7 @@ namespace tp2_grupal
             this.btn_marcas.Location = new System.Drawing.Point(653, 371);
             this.btn_marcas.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btn_marcas.Name = "btn_marcas";
-            this.btn_marcas.Size = new System.Drawing.Size(226, 113);
+            this.btn_marcas.Size = new System.Drawing.Size(250, 113);
             this.btn_marcas.TabIndex = 1;
             this.btn_marcas.Text = "Marcas";
             this.btn_marcas.UseVisualStyleBackColor = false;
@@ -119,14 +119,17 @@ namespace tp2_grupal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(930, 607);
             this.Controls.Add(this.titulo_prin);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_marcas);
             this.Controls.Add(this.b_articulos);
             this.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(954, 671);
             this.Name = "Frm_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_principal";

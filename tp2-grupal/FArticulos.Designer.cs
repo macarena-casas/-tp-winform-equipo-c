@@ -34,6 +34,7 @@ namespace tp2_grupal
             this.b_Modificar = new System.Windows.Forms.Button();
             this.b_Listar = new System.Windows.Forms.Button();
             this.b_Detalles = new System.Windows.Forms.Button();
+            this.b_volver_a = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // b_Agregar
@@ -47,7 +48,7 @@ namespace tp2_grupal
             this.b_Agregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_Agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_Agregar.Location = new System.Drawing.Point(350, 98);
+            this.b_Agregar.Location = new System.Drawing.Point(225, 31);
             this.b_Agregar.Name = "b_Agregar";
             this.b_Agregar.Size = new System.Drawing.Size(122, 45);
             this.b_Agregar.TabIndex = 0;
@@ -65,9 +66,9 @@ namespace tp2_grupal
             this.b_Eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_Eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_Eliminar.Location = new System.Drawing.Point(350, 192);
+            this.b_Eliminar.Location = new System.Drawing.Point(225, 102);
             this.b_Eliminar.Name = "b_Eliminar";
-            this.b_Eliminar.Size = new System.Drawing.Size(122, 46);
+            this.b_Eliminar.Size = new System.Drawing.Size(122, 45);
             this.b_Eliminar.TabIndex = 1;
             this.b_Eliminar.Text = "Eliminar";
             this.b_Eliminar.UseVisualStyleBackColor = false;
@@ -83,9 +84,9 @@ namespace tp2_grupal
             this.b_Modificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_Modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_Modificar.Location = new System.Drawing.Point(350, 290);
+            this.b_Modificar.Location = new System.Drawing.Point(225, 167);
             this.b_Modificar.Name = "b_Modificar";
-            this.b_Modificar.Size = new System.Drawing.Size(122, 44);
+            this.b_Modificar.Size = new System.Drawing.Size(122, 45);
             this.b_Modificar.TabIndex = 2;
             this.b_Modificar.Text = "Modificar";
             this.b_Modificar.UseVisualStyleBackColor = false;
@@ -101,9 +102,9 @@ namespace tp2_grupal
             this.b_Listar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_Listar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_Listar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_Listar.Location = new System.Drawing.Point(350, 386);
+            this.b_Listar.Location = new System.Drawing.Point(225, 301);
             this.b_Listar.Name = "b_Listar";
-            this.b_Listar.Size = new System.Drawing.Size(122, 46);
+            this.b_Listar.Size = new System.Drawing.Size(122, 45);
             this.b_Listar.TabIndex = 3;
             this.b_Listar.Text = "Listar";
             this.b_Listar.UseVisualStyleBackColor = false;
@@ -119,28 +120,53 @@ namespace tp2_grupal
             this.b_Detalles.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_Detalles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_Detalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_Detalles.Location = new System.Drawing.Point(350, 484);
+            this.b_Detalles.Location = new System.Drawing.Point(225, 234);
             this.b_Detalles.Name = "b_Detalles";
-            this.b_Detalles.Size = new System.Drawing.Size(122, 39);
+            this.b_Detalles.Size = new System.Drawing.Size(122, 45);
             this.b_Detalles.TabIndex = 4;
             this.b_Detalles.Text = "Detalles";
             this.b_Detalles.UseVisualStyleBackColor = false;
             this.b_Detalles.Click += new System.EventHandler(this.b_Detalles_Click);
             // 
+            // b_volver_a
+            // 
+            this.b_volver_a.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.b_volver_a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.b_volver_a.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_volver_a.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.b_volver_a.FlatAppearance.BorderSize = 5;
+            this.b_volver_a.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.b_volver_a.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
+            this.b_volver_a.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_volver_a.Location = new System.Drawing.Point(225, 363);
+            this.b_volver_a.Name = "b_volver_a";
+            this.b_volver_a.Size = new System.Drawing.Size(122, 45);
+            this.b_volver_a.TabIndex = 5;
+            this.b_volver_a.Text = "Volver";
+            this.b_volver_a.UseVisualStyleBackColor = false;
+            this.b_volver_a.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FArticulos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1101, 598);
+            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.Controls.Add(this.b_volver_a);
             this.Controls.Add(this.b_Detalles);
             this.Controls.Add(this.b_Listar);
             this.Controls.Add(this.b_Modificar);
             this.Controls.Add(this.b_Eliminar);
             this.Controls.Add(this.b_Agregar);
             this.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(600, 500);
+            this.MinimumSize = new System.Drawing.Size(600, 500);
             this.Name = "FArticulos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FArticulos";
             this.ResumeLayout(false);
 
@@ -153,5 +179,6 @@ namespace tp2_grupal
         private System.Windows.Forms.Button b_Modificar;
         private System.Windows.Forms.Button b_Listar;
         private System.Windows.Forms.Button b_Detalles;
+        private System.Windows.Forms.Button b_volver_a;
     }
 }

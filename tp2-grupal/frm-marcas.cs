@@ -21,5 +21,10 @@ namespace tp2_grupal
         {
 
         }
+
+        private void b_volve_m_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
