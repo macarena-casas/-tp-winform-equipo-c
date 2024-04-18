@@ -18,7 +18,12 @@ namespace tp2_grupal
         }
 
         private void b_articulos_Click(object sender, EventArgs e)
-        {
+        { 
+            foreach(var item in Application.OpenForms)
+            {
+                if(item.GetType() == typeof(FArticulos))
+                    return;
+            }
             FArticulos FArt = new FArticulos();
             FArt.Show();
         }
@@ -41,6 +46,12 @@ namespace tp2_grupal
 
         private void b_categorias_Click(object sender, EventArgs e)
         {
+            foreach( var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(Frm_categorias))
+                    return; 
+            }
+
             Frm_categorias Fcate = new Frm_categorias();
             Fcate.Show();
         }
