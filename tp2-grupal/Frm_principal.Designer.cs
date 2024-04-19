@@ -33,6 +33,7 @@ namespace tp2_grupal
             this.btn_marcas = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.titulo_prin = new System.Windows.Forms.Label();
+            this.b_imagen_p = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // b_articulos
@@ -47,10 +48,10 @@ namespace tp2_grupal
             this.b_articulos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_articulos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_articulos.Font = new System.Drawing.Font("Arial Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_articulos.Location = new System.Drawing.Point(33, 371);
+            this.b_articulos.Location = new System.Drawing.Point(67, 372);
             this.b_articulos.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.b_articulos.Name = "b_articulos";
-            this.b_articulos.Size = new System.Drawing.Size(226, 113);
+            this.b_articulos.Size = new System.Drawing.Size(175, 87);
             this.b_articulos.TabIndex = 0;
             this.b_articulos.Text = "Articulos";
             this.b_articulos.UseVisualStyleBackColor = false;
@@ -70,10 +71,10 @@ namespace tp2_grupal
             this.btn_marcas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.btn_marcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_marcas.Font = new System.Drawing.Font("Arial Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_marcas.Location = new System.Drawing.Point(653, 371);
+            this.btn_marcas.Location = new System.Drawing.Point(277, 372);
             this.btn_marcas.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btn_marcas.Name = "btn_marcas";
-            this.btn_marcas.Size = new System.Drawing.Size(250, 113);
+            this.btn_marcas.Size = new System.Drawing.Size(175, 87);
             this.btn_marcas.TabIndex = 1;
             this.btn_marcas.Text = "Marcas";
             this.btn_marcas.UseVisualStyleBackColor = false;
@@ -91,10 +92,10 @@ namespace tp2_grupal
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(336, 371);
+            this.button1.Location = new System.Drawing.Point(479, 372);
             this.button1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(240, 113);
+            this.button1.Size = new System.Drawing.Size(175, 87);
             this.button1.TabIndex = 2;
             this.button1.Text = "Categorias";
             this.button1.UseVisualStyleBackColor = false;
@@ -115,12 +116,31 @@ namespace tp2_grupal
             this.titulo_prin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.titulo_prin.Click += new System.EventHandler(this.label1_Click);
             // 
+            // b_imagen_p
+            // 
+            this.b_imagen_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.b_imagen_p.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_imagen_p.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.b_imagen_p.FlatAppearance.BorderSize = 5;
+            this.b_imagen_p.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.b_imagen_p.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(57)))));
+            this.b_imagen_p.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_imagen_p.Font = new System.Drawing.Font("Arial Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_imagen_p.Location = new System.Drawing.Point(688, 373);
+            this.b_imagen_p.Name = "b_imagen_p";
+            this.b_imagen_p.Size = new System.Drawing.Size(175, 87);
+            this.b_imagen_p.TabIndex = 4;
+            this.b_imagen_p.Text = "Imagenes";
+            this.b_imagen_p.UseVisualStyleBackColor = false;
+            this.b_imagen_p.Click += new System.EventHandler(this.b_imagen_p_Click);
+            // 
             // Frm_principal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(930, 607);
+            this.ClientSize = new System.Drawing.Size(938, 632);
+            this.Controls.Add(this.b_imagen_p);
             this.Controls.Add(this.titulo_prin);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_marcas);
@@ -133,6 +153,7 @@ namespace tp2_grupal
             this.Name = "Frm_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_principal";
+            this.Load += new System.EventHandler(this.Frm_principal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,5 +165,6 @@ namespace tp2_grupal
         private System.Windows.Forms.Button btn_marcas;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label titulo_prin;
+        private System.Windows.Forms.Button b_imagen_p;
     }
 }

@@ -46,7 +46,7 @@ namespace tp2_grupal
             this.b_agregar_c.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_agregar_c.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_agregar_c.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_agregar_c.Location = new System.Drawing.Point(225, 42);
+            this.b_agregar_c.Location = new System.Drawing.Point(225, 57);
             this.b_agregar_c.Name = "b_agregar_c";
             this.b_agregar_c.Size = new System.Drawing.Size(122, 45);
             this.b_agregar_c.TabIndex = 0;
@@ -64,7 +64,7 @@ namespace tp2_grupal
             this.b_eliminar_c.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_eliminar_c.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_eliminar_c.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_eliminar_c.Location = new System.Drawing.Point(225, 133);
+            this.b_eliminar_c.Location = new System.Drawing.Point(225, 159);
             this.b_eliminar_c.Name = "b_eliminar_c";
             this.b_eliminar_c.Size = new System.Drawing.Size(122, 45);
             this.b_eliminar_c.TabIndex = 1;
@@ -82,7 +82,7 @@ namespace tp2_grupal
             this.b_listar_c.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_listar_c.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_listar_c.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_listar_c.Location = new System.Drawing.Point(225, 226);
+            this.b_listar_c.Location = new System.Drawing.Point(225, 263);
             this.b_listar_c.Name = "b_listar_c";
             this.b_listar_c.Size = new System.Drawing.Size(122, 45);
             this.b_listar_c.TabIndex = 2;
@@ -101,7 +101,7 @@ namespace tp2_grupal
             this.b_volver_c.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_volver_c.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_volver_c.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_volver_c.Location = new System.Drawing.Point(225, 319);
+            this.b_volver_c.Location = new System.Drawing.Point(225, 368);
             this.b_volver_c.Name = "b_volver_c";
             this.b_volver_c.Size = new System.Drawing.Size(122, 45);
             this.b_volver_c.TabIndex = 3;
@@ -111,11 +111,11 @@ namespace tp2_grupal
             // 
             // Frm_categorias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.b_volver_c);
             this.Controls.Add(this.b_listar_c);
             this.Controls.Add(this.b_eliminar_c);

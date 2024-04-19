@@ -55,5 +55,23 @@ namespace tp2_grupal
             Frm_categorias Fcate = new Frm_categorias();
             Fcate.Show();
         }
+
+        private void b_imagen_p_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(Frm_Imagen))
+                    return;
+            }
+
+            Frm_Imagen FIma = new Frm_Imagen();
+            FIma.Show();
+
+        }
+
+        private void Frm_principal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

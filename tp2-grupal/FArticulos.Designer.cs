@@ -66,7 +66,7 @@ namespace tp2_grupal
             this.b_Eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_Eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_Eliminar.Location = new System.Drawing.Point(225, 102);
+            this.b_Eliminar.Location = new System.Drawing.Point(225, 97);
             this.b_Eliminar.Name = "b_Eliminar";
             this.b_Eliminar.Size = new System.Drawing.Size(122, 45);
             this.b_Eliminar.TabIndex = 1;
@@ -102,7 +102,7 @@ namespace tp2_grupal
             this.b_Listar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_Listar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_Listar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_Listar.Location = new System.Drawing.Point(225, 301);
+            this.b_Listar.Location = new System.Drawing.Point(225, 306);
             this.b_Listar.Name = "b_Listar";
             this.b_Listar.Size = new System.Drawing.Size(122, 45);
             this.b_Listar.TabIndex = 3;
@@ -139,7 +139,7 @@ namespace tp2_grupal
             this.b_volver_a.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_volver_a.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_volver_a.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_volver_a.Location = new System.Drawing.Point(225, 363);
+            this.b_volver_a.Location = new System.Drawing.Point(225, 379);
             this.b_volver_a.Name = "b_volver_a";
             this.b_volver_a.Size = new System.Drawing.Size(122, 45);
             this.b_volver_a.TabIndex = 5;
@@ -149,10 +149,10 @@ namespace tp2_grupal
             // 
             // FArticulos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.b_volver_a);
             this.Controls.Add(this.b_Detalles);
             this.Controls.Add(this.b_Listar);

@@ -45,7 +45,7 @@
             this.b_eliminar_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_eliminar_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_eliminar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_eliminar_m.Location = new System.Drawing.Point(225, 213);
+            this.b_eliminar_m.Location = new System.Drawing.Point(225, 254);
             this.b_eliminar_m.Name = "b_eliminar_m";
             this.b_eliminar_m.Size = new System.Drawing.Size(122, 45);
             this.b_eliminar_m.TabIndex = 0;
@@ -62,7 +62,7 @@
             this.b_agregar_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_agregar_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_agregar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_agregar_m.Location = new System.Drawing.Point(225, 46);
+            this.b_agregar_m.Location = new System.Drawing.Point(225, 62);
             this.b_agregar_m.Name = "b_agregar_m";
             this.b_agregar_m.Size = new System.Drawing.Size(122, 45);
             this.b_agregar_m.TabIndex = 1;
@@ -80,7 +80,7 @@
             this.b_listar_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_listar_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_listar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_listar_m.Location = new System.Drawing.Point(225, 123);
+            this.b_listar_m.Location = new System.Drawing.Point(225, 160);
             this.b_listar_m.Name = "b_listar_m";
             this.b_listar_m.Size = new System.Drawing.Size(122, 45);
             this.b_listar_m.TabIndex = 2;
@@ -96,7 +96,7 @@
             this.b_volve_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_volve_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_volve_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_volve_m.Location = new System.Drawing.Point(225, 295);
+            this.b_volve_m.Location = new System.Drawing.Point(225, 349);
             this.b_volve_m.Name = "b_volve_m";
             this.b_volve_m.Size = new System.Drawing.Size(122, 45);
             this.b_volve_m.TabIndex = 3;
@@ -106,10 +106,10 @@
             // 
             // Frm_marcas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.b_volve_m);
             this.Controls.Add(this.b_listar_m);
             this.Controls.Add(this.b_agregar_m);
