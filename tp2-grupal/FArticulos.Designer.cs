@@ -54,6 +54,7 @@ namespace tp2_grupal
             this.b_Agregar.TabIndex = 0;
             this.b_Agregar.Text = "Agregar";
             this.b_Agregar.UseVisualStyleBackColor = false;
+            this.b_Agregar.Click += new System.EventHandler(this.b_Agregar_Click);
             // 
             // b_Eliminar
             // 
@@ -72,6 +73,7 @@ namespace tp2_grupal
             this.b_Eliminar.TabIndex = 1;
             this.b_Eliminar.Text = "Eliminar";
             this.b_Eliminar.UseVisualStyleBackColor = false;
+            this.b_Eliminar.Click += new System.EventHandler(this.b_Eliminar_Click);
             // 
             // b_Modificar
             // 
@@ -90,6 +92,7 @@ namespace tp2_grupal
             this.b_Modificar.TabIndex = 2;
             this.b_Modificar.Text = "Modificar";
             this.b_Modificar.UseVisualStyleBackColor = false;
+            this.b_Modificar.Click += new System.EventHandler(this.b_Modificar_Click);
             // 
             // b_Listar
             // 
@@ -108,6 +111,7 @@ namespace tp2_grupal
             this.b_Listar.TabIndex = 3;
             this.b_Listar.Text = "Listar";
             this.b_Listar.UseVisualStyleBackColor = false;
+            this.b_Listar.Click += new System.EventHandler(this.b_Listar_Click);
             // 
             // b_Detalles
             // 
