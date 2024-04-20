@@ -16,5 +16,10 @@ namespace tp2_grupal
         {
             InitializeComponent();
         }
+
+        private void b_cancel_ma_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

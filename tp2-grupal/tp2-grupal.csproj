@@ -84,12 +84,6 @@
     <Compile Include="FModificar_a.Designer.cs">
       <DependentUpon>FModificar_a.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_articulos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_articulos.Designer.cs">
-      <DependentUpon>Frm_articulos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_Imagen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +107,24 @@
     </Compile>
     <Compile Include="Frm_principal.Designer.cs">
       <DependentUpon>Frm_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_agregar_i.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_agregar_i.Designer.cs">
+      <DependentUpon>F_agregar_i.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_eliminar_i.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_eliminar_i.Designer.cs">
+      <DependentUpon>F_eliminar_i.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_listar_i.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_listar_i.Designer.cs">
+      <DependentUpon>F_listar_i.cs</DependentUpon>
     </Compile>
     <Compile Include="imagen.cs" />
     <Compile Include="marcas.cs" />
@@ -139,9 +151,6 @@
     <EmbeddedResource Include="frm-marcas.resx">
       <DependentUpon>frm-marcas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_articulos.resx">
-      <DependentUpon>Frm_articulos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_categorias.resx">
       <DependentUpon>Frm_categorias.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +159,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_principal.resx">
       <DependentUpon>Frm_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_agregar_i.resx">
+      <DependentUpon>F_agregar_i.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_eliminar_i.resx">
+      <DependentUpon>F_eliminar_i.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_listar_i.resx">
+      <DependentUpon>F_listar_i.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

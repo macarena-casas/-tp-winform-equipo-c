@@ -1,7 +1,7 @@
 ﻿
 namespace tp2_grupal
 {
-    partial class FListar_a
+    partial class F_listar_i
     {
         /// <summary>
         /// Required designer variable.
@@ -31,21 +31,19 @@ namespace tp2_grupal
         {
             this.SuspendLayout();
             // 
-            // FListar_a
+            // F_listar_i
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(576, 436);
-            this.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(600, 500);
             this.MinimumSize = new System.Drawing.Size(600, 500);
-            this.Name = "FListar_a";
+            this.Name = "F_listar_i";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Listar Articulos";
+            this.Text = "Listar Imagenes";
             this.ResumeLayout(false);
 
         }

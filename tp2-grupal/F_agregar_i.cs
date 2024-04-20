@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace tp2_grupal
 {
-    public partial class FEliminar_a : Form
+    public partial class F_agregar_i : Form
     {
-        public FEliminar_a()
+        public F_agregar_i()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void b_cancel_ai_Click(object sender, EventArgs e)
         {
             Close();
         }

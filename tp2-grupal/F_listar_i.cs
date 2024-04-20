@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tp2_grupal
 {
-    public partial class Frm_Articulos : Form
+    public partial class F_listar_i : Form
     {
-        public Frm_Articulos()
+        public F_listar_i()
         {
             InitializeComponent();
         }
