@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tp2_grupal
 {
-    public partial class frm_agregarmarca : Form
+    public partial class F_Agregar_M : Form
     {
-        public frm_agregarmarca()
+        public F_Agregar_M()
         {
             InitializeComponent();
         }

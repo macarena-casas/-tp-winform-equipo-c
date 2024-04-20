@@ -1,6 +1,6 @@
 ﻿namespace tp2_grupal
 {
-    partial class frm_eliminarmarca
+    partial class F_Eliminar_M
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +42,7 @@
             this.textBox1.MaximumSize = new System.Drawing.Size(223, 23);
             this.textBox1.MinimumSize = new System.Drawing.Size(223, 23);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 23);
+            this.textBox1.Size = new System.Drawing.Size(223, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -80,7 +80,7 @@
             this.btn_marca_eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_marca_eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_marca_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_marca_eliminar.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_marca_eliminar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_marca_eliminar.ForeColor = System.Drawing.Color.Black;
             this.btn_marca_eliminar.Location = new System.Drawing.Point(211, 117);
             this.btn_marca_eliminar.Name = "btn_marca_eliminar";
@@ -99,7 +99,7 @@
             this.btn_cancelar_eliminarmarca.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_cancelar_eliminarmarca.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_cancelar_eliminarmarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancelar_eliminarmarca.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_cancelar_eliminarmarca.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancelar_eliminarmarca.Location = new System.Drawing.Point(325, 117);
             this.btn_cancelar_eliminarmarca.Name = "btn_cancelar_eliminarmarca";
             this.btn_cancelar_eliminarmarca.Size = new System.Drawing.Size(109, 39);
@@ -108,22 +108,24 @@
             this.btn_cancelar_eliminarmarca.UseVisualStyleBackColor = false;
             this.btn_cancelar_eliminarmarca.Click += new System.EventHandler(this.btn_cancelar_eliminarmarca_Click);
             // 
-            // frm_eliminarmarca
+            // F_Eliminar_M
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(531, 228);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.btn_cancelar_eliminarmarca);
             this.Controls.Add(this.btn_marca_eliminar);
             this.Controls.Add(this.l_confirmar_eliminar_marca);
             this.Controls.Add(this.l_eliminar_marca);
             this.Controls.Add(this.textBox1);
-            this.MaximumSize = new System.Drawing.Size(547, 267);
-            this.MinimumSize = new System.Drawing.Size(547, 267);
-            this.Name = "frm_eliminarmarca";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(600, 500);
+            this.MinimumSize = new System.Drawing.Size(600, 500);
+            this.Name = "F_Eliminar_M";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_eliminarmarca";
+            this.Text = "Eliminar Marca";
             this.Load += new System.EventHandler(this.frm_eliminarmarca_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

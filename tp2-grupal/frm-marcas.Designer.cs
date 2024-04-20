@@ -127,7 +127,7 @@
             this.MinimumSize = new System.Drawing.Size(600, 500);
             this.Name = "Frm_marcas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_marcas";
+            this.Text = "FMarcas";
             this.ResumeLayout(false);
 
         }

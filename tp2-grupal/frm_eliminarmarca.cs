@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tp2_grupal
 {
-    public partial class frm_eliminarmarca : Form
+    public partial class F_Eliminar_M : Form
     {
-        public frm_eliminarmarca()
+        public F_Eliminar_M()
         {
             InitializeComponent();
         }

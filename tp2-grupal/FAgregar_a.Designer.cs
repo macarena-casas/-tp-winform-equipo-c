@@ -35,6 +35,8 @@ namespace tp2_grupal
             this.lcate_a = new System.Windows.Forms.Label();
             this.ldetalle_a = new System.Windows.Forms.Label();
             this.richdetalle_a = new System.Windows.Forms.RichTextBox();
+            this.A_agregar_A = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // l_nom_art
@@ -55,7 +57,7 @@ namespace tp2_grupal
             // 
             this.tb_nombrea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.tb_nombrea.Font = new System.Drawing.Font("Arial", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_nombrea.Location = new System.Drawing.Point(197, 39);
+            this.tb_nombrea.Location = new System.Drawing.Point(178, 46);
             this.tb_nombrea.Name = "tb_nombrea";
             this.tb_nombrea.Size = new System.Drawing.Size(223, 23);
             this.tb_nombrea.TabIndex = 1;
@@ -113,12 +115,49 @@ namespace tp2_grupal
             this.richdetalle_a.TabIndex = 5;
             this.richdetalle_a.Text = "";
             // 
+            // A_agregar_A
+            // 
+            this.A_agregar_A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.A_agregar_A.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A_agregar_A.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.A_agregar_A.FlatAppearance.BorderSize = 5;
+            this.A_agregar_A.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.A_agregar_A.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.A_agregar_A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.A_agregar_A.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A_agregar_A.Location = new System.Drawing.Point(178, 396);
+            this.A_agregar_A.Name = "A_agregar_A";
+            this.A_agregar_A.Size = new System.Drawing.Size(94, 37);
+            this.A_agregar_A.TabIndex = 6;
+            this.A_agregar_A.Text = "Aceptar";
+            this.A_agregar_A.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.FlatAppearance.BorderSize = 5;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(307, 396);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 37);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FAgregar_a
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.A_agregar_A);
             this.Controls.Add(this.richdetalle_a);
             this.Controls.Add(this.ldetalle_a);
             this.Controls.Add(this.lcate_a);
@@ -146,5 +185,7 @@ namespace tp2_grupal
         private System.Windows.Forms.Label ldetalle_a;
         private System.Windows.Forms.RichTextBox richdetalle_a;
         private System.Windows.Forms.Label l_nom_art;
+        private System.Windows.Forms.Button A_agregar_A;
+        private System.Windows.Forms.Button button2;
     }
 }

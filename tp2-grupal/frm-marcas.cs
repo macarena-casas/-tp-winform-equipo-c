@@ -21,10 +21,10 @@ namespace tp2_grupal
         {
             foreach (var item in Application.OpenForms)
             {
-                if (item.GetType() == typeof(frm_agregarmarca))
+                if (item.GetType() == typeof(F_Agregar_M))
                     return;
             }
-            frm_agregarmarca FAgregar = new frm_agregarmarca();
+            F_Agregar_M FAgregar = new F_Agregar_M();
             FAgregar.Show();
 
         }
@@ -44,10 +44,10 @@ namespace tp2_grupal
         {
             foreach(var item in Application.OpenForms)
             {
-                if(item.GetType() == typeof(frm_eliminarmarca))
+                if(item.GetType() == typeof(F_Eliminar_M))
                     return;
             }
-            frm_eliminarmarca FEliminar = new frm_eliminarmarca();
+            F_Eliminar_M FEliminar = new F_Eliminar_M();
             FEliminar.Show();
         }
 
@@ -55,10 +55,10 @@ namespace tp2_grupal
         {
             foreach (var item in Application.OpenForms)
             {
-                if (item.GetType() == typeof(frm_listarmarcas))
+                if (item.GetType() == typeof(F_Listar_M))
                     return;
             }
-            frm_listarmarcas FListar = new frm_listarmarcas();
+            F_Listar_M FListar = new F_Listar_M();
             FListar.Show();
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace tp2_grupal
 {
-    partial class frm_agregarmarca
+    partial class F_Agregar_M
     {
         /// <summary>
         /// Required designer variable.
@@ -101,7 +101,7 @@
             this.btn_aceptar_agregarmarca.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_aceptar_agregarmarca.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_aceptar_agregarmarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_aceptar_agregarmarca.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_aceptar_agregarmarca.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_aceptar_agregarmarca.ForeColor = System.Drawing.Color.Black;
             this.btn_aceptar_agregarmarca.Location = new System.Drawing.Point(196, 218);
             this.btn_aceptar_agregarmarca.Name = "btn_aceptar_agregarmarca";
@@ -120,7 +120,7 @@
             this.btn_volver_agregarmarca.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_volver_agregarmarca.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_volver_agregarmarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_volver_agregarmarca.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_volver_agregarmarca.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_volver_agregarmarca.Location = new System.Drawing.Point(335, 218);
             this.btn_volver_agregarmarca.Name = "btn_volver_agregarmarca";
             this.btn_volver_agregarmarca.Size = new System.Drawing.Size(114, 44);
@@ -129,12 +129,12 @@
             this.btn_volver_agregarmarca.UseVisualStyleBackColor = false;
             this.btn_volver_agregarmarca.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // frm_agregarmarca
+            // F_Agregar_M
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(488, 328);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.btn_volver_agregarmarca);
             this.Controls.Add(this.btn_aceptar_agregarmarca);
             this.Controls.Add(this.l_agregar_agregarmarca);
@@ -142,11 +142,13 @@
             this.Controls.Add(this.l_codigomarca_agregarmarca);
             this.Controls.Add(this.l_nombremarca_agregarmarca);
             this.Controls.Add(this.tb_agregarmarca);
-            this.MaximumSize = new System.Drawing.Size(504, 367);
-            this.MinimumSize = new System.Drawing.Size(504, 367);
-            this.Name = "frm_agregarmarca";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(600, 500);
+            this.MinimumSize = new System.Drawing.Size(600, 500);
+            this.Name = "F_Agregar_M";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_agregarmarca";
+            this.Text = "Agregar Marca";
             this.ResumeLayout(false);
             this.PerformLayout();
 

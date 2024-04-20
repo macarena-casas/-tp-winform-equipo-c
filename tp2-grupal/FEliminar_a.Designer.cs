@@ -39,9 +39,10 @@ namespace tp2_grupal
             // 
             this.l_codelim_a.AutoSize = true;
             this.l_codelim_a.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_codelim_a.ForeColor = System.Drawing.Color.White;
             this.l_codelim_a.Location = new System.Drawing.Point(12, 49);
             this.l_codelim_a.Name = "l_codelim_a";
-            this.l_codelim_a.Size = new System.Drawing.Size(691, 33);
+            this.l_codelim_a.Size = new System.Drawing.Size(387, 19);
             this.l_codelim_a.TabIndex = 0;
             this.l_codelim_a.Text = "Ingresar el codigo del articulo que desea eliminar:";
             // 
@@ -53,7 +54,7 @@ namespace tp2_grupal
             this.tb_elimi_a.MaximumSize = new System.Drawing.Size(170, 34);
             this.tb_elimi_a.MinimumSize = new System.Drawing.Size(170, 34);
             this.tb_elimi_a.Name = "tb_elimi_a";
-            this.tb_elimi_a.Size = new System.Drawing.Size(170, 34);
+            this.tb_elimi_a.Size = new System.Drawing.Size(170, 25);
             this.tb_elimi_a.TabIndex = 1;
             // 
             // button1
@@ -97,10 +98,10 @@ namespace tp2_grupal
             // 
             // FEliminar_a
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tb_elimi_a);

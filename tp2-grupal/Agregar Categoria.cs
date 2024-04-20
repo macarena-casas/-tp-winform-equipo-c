@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace tp2_grupal
 {
-    public partial class F_Listar_M : Form
+    public partial class Agregar_Categoria : Form
     {
-        public F_Listar_M()
+        public Agregar_Categoria()
         {
             InitializeComponent();
-        }
-
-        private void btn_salir_listarmarcas_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

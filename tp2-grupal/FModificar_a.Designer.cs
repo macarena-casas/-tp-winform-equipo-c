@@ -39,9 +39,10 @@ namespace tp2_grupal
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(685, 32);
+            this.label1.Size = new System.Drawing.Size(365, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingrese el codigo del articulo que desea modificar:";
             // 
@@ -53,7 +54,7 @@ namespace tp2_grupal
             this.tex_modif_a.MaximumSize = new System.Drawing.Size(170, 34);
             this.tex_modif_a.MinimumSize = new System.Drawing.Size(170, 34);
             this.tex_modif_a.Name = "tex_modif_a";
-            this.tex_modif_a.Size = new System.Drawing.Size(170, 34);
+            this.tex_modif_a.Size = new System.Drawing.Size(170, 23);
             this.tex_modif_a.TabIndex = 1;
             // 
             // b_acep_ma
@@ -93,10 +94,10 @@ namespace tp2_grupal
             // 
             // FModificar_a
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.b_cancel_ma);
             this.Controls.Add(this.b_acep_ma);
             this.Controls.Add(this.tex_modif_a);
