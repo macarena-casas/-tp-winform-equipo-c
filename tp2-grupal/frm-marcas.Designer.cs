@@ -36,6 +36,7 @@
             // 
             // b_eliminar_m
             // 
+            this.b_eliminar_m.AccessibleName = "b_eliminar_m";
             this.b_eliminar_m.AccessibleRole = System.Windows.Forms.AccessibleRole.Sound;
             this.b_eliminar_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.b_eliminar_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -51,9 +52,11 @@
             this.b_eliminar_m.TabIndex = 0;
             this.b_eliminar_m.Text = "Eliminar marca";
             this.b_eliminar_m.UseVisualStyleBackColor = false;
+            this.b_eliminar_m.Click += new System.EventHandler(this.b_eliminar_m_Click);
             // 
             // b_agregar_m
             // 
+            this.b_agregar_m.AccessibleName = "b_agregar_m";
             this.b_agregar_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.b_agregar_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.b_agregar_m.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -72,6 +75,7 @@
             // 
             // b_listar_m
             // 
+            this.b_listar_m.AccessibleName = "b_listar_m";
             this.b_listar_m.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.b_listar_m.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.b_listar_m.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -86,6 +90,7 @@
             this.b_listar_m.TabIndex = 2;
             this.b_listar_m.Text = "Listar marcas";
             this.b_listar_m.UseVisualStyleBackColor = false;
+            this.b_listar_m.Click += new System.EventHandler(this.b_listar_m_Click_1);
             // 
             // b_volve_m
             // 

@@ -57,7 +57,7 @@ namespace tp2_grupal
             this.tb_nombrea.Font = new System.Drawing.Font("Arial", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_nombrea.Location = new System.Drawing.Point(197, 39);
             this.tb_nombrea.Name = "tb_nombrea";
-            this.tb_nombrea.Size = new System.Drawing.Size(223, 34);
+            this.tb_nombrea.Size = new System.Drawing.Size(223, 23);
             this.tb_nombrea.TabIndex = 1;
             this.tb_nombrea.TextChanged += new System.EventHandler(this.tb_nombrea_TextChanged);
             // 
@@ -115,10 +115,10 @@ namespace tp2_grupal
             // 
             // FAgregar_a
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.richdetalle_a);
             this.Controls.Add(this.ldetalle_a);
             this.Controls.Add(this.lcate_a);
@@ -140,12 +140,11 @@ namespace tp2_grupal
         }
 
         #endregion
-
-        private System.Windows.Forms.Label l_nom_art;
         private System.Windows.Forms.TextBox tb_nombrea;
         private System.Windows.Forms.Label l_marca_a;
         private System.Windows.Forms.Label lcate_a;
         private System.Windows.Forms.Label ldetalle_a;
         private System.Windows.Forms.RichTextBox richdetalle_a;
+        private System.Windows.Forms.Label l_nom_art;
     }
 }
