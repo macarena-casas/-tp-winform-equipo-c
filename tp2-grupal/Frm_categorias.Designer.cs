@@ -52,6 +52,7 @@ namespace tp2_grupal
             this.b_agregar_c.TabIndex = 0;
             this.b_agregar_c.Text = "Agregar";
             this.b_agregar_c.UseVisualStyleBackColor = false;
+            this.b_agregar_c.Click += new System.EventHandler(this.b_agregar_c_Click);
             // 
             // b_eliminar_c
             // 

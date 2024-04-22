@@ -30,7 +30,7 @@ namespace tp2_grupal
                 {
                     Articulos aux = new Articulos();
                     aux.nombre_articulo =(string)lector["Nombre"];
-                    //aux.precio_articulo =(float)lector["Precio"];
+                    aux.precio_articulo =(decimal)lector["Precio"];
                     aux.codigo_articulo = (string)lector["Codigo"];
                     aux.descripcion_articulo = (string)lector["Descripcion"];
                     aux.Id_articulo = (int)lector["Id"];

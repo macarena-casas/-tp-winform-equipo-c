@@ -26,5 +26,11 @@ namespace tp2_grupal
         {
             Close();
         }
+
+        private void b_agregar_c_Click(object sender, EventArgs e)
+        {
+            FAgregar_Categoria ventana = new FAgregar_Categoria();
+            ventana.ShowDialog();
+        }
     }
 }

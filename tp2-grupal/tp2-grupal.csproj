@@ -62,6 +62,12 @@
     <Compile Include="FAgregar_a.Designer.cs">
       <DependentUpon>FAgregar_a.cs</DependentUpon>
     </Compile>
+    <Compile Include="FAgregar_Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAgregar_Categoria.Designer.cs">
+      <DependentUpon>FAgregar_Categoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="FArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FAgregar_a.resx">
       <DependentUpon>FAgregar_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAgregar_Categoria.resx">
+      <DependentUpon>FAgregar_Categoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FArticulos.resx">
       <DependentUpon>FArticulos.cs</DependentUpon>
