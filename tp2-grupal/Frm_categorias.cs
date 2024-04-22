@@ -19,7 +19,13 @@ namespace tp2_grupal
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(F_listar_c))
+                    return;
+            }
+            F_listar_c Flisc = new F_listar_c();
+            Flisc.Show();
         }
 
         private void b_volver_c_Click(object sender, EventArgs e)
@@ -29,8 +35,13 @@ namespace tp2_grupal
 
         private void b_agregar_c_Click(object sender, EventArgs e)
         {
-            FAgregar_Categoria ventana = new FAgregar_Categoria();
-            ventana.ShowDialog();
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FAgregar_Categoria))
+                    return;
+            }
+            FAgregar_Categoria Fagrec = new FAgregar_Categoria();
+            Fagrec.Show();
         }
     }
 }

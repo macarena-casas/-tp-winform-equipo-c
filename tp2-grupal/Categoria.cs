@@ -9,9 +9,9 @@ namespace tp2_grupal
     class Categoria
     {
       
-        public string nombre { get; set; }
+        public string nombre_categoria { get; set; }
         public int codigo_categoria { get; set; }
-        public string descripcion_categoria { get; set; }
+       
 
         public void ListarCategorias()
         {

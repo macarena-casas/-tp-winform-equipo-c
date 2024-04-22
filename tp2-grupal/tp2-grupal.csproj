@@ -56,6 +56,7 @@
     <Compile Include="ArticuloNegocio.cs" />
     <Compile Include="Articulos.cs" />
     <Compile Include="Categoria.cs" />
+    <Compile Include="CategoriaNegocio.cs" />
     <Compile Include="FAgregar_a.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +153,12 @@
     <Compile Include="F_eliminar_i.Designer.cs">
       <DependentUpon>F_eliminar_i.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_listar_c.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_listar_c.Designer.cs">
+      <DependentUpon>F_listar_c.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_listar_i.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_eliminar_i.resx">
       <DependentUpon>F_eliminar_i.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_listar_c.resx">
+      <DependentUpon>F_listar_c.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_listar_i.resx">
       <DependentUpon>F_listar_i.cs</DependentUpon>
