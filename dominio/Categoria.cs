@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tp2_grupal
+namespace dominio
 {
-    class Categoria
+     public class Categoria
     {
       
         public string nombre_categoria { get; set; }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tp2_grupal
+namespace dominio
 {
-    internal class Marca
+    public class Marca
     {
      public string nombre_marca {  get; set; }
      public int codigo_marca { get; set; }

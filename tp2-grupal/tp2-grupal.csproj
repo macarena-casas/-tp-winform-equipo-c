@@ -53,10 +53,6 @@
     <Compile Include="Agregar Categoria.Designer.cs">
       <DependentUpon>Agregar Categoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="ArticuloNegocio.cs" />
-    <Compile Include="Articulos.cs" />
-    <Compile Include="Categoria.cs" />
-    <Compile Include="CategoriaNegocio.cs" />
     <Compile Include="FAgregar_a.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,8 +161,6 @@
     <Compile Include="F_listar_i.Designer.cs">
       <DependentUpon>F_listar_i.cs</DependentUpon>
     </Compile>
-    <Compile Include="imagen.cs" />
-    <Compile Include="marcas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Agregar Categoria.resx">
@@ -247,6 +241,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dominio\dominio.csproj">
+      <Project>{5875d884-cfa3-44a1-9452-a0df74996239}</Project>
+      <Name>dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\negocio\negocio.csproj">
+      <Project>{80fcd920-d07d-44e0-9b8b-e5abfaadc338}</Project>
+      <Name>negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

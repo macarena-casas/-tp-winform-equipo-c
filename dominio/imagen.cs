@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tp2_grupal
+namespace dominio
 {
-    class Imagen
+     public class Imagen
     {
         public string Nombre_imagen { get; set; }
         public int Codigo_imagen { get; set; }
