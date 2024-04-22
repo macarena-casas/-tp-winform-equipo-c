@@ -53,6 +53,7 @@
     <Compile Include="Agregar Categoria.Designer.cs">
       <DependentUpon>Agregar Categoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="ArticuloNegocio.cs" />
     <Compile Include="Articulos.cs" />
     <Compile Include="Categoria.cs" />
     <Compile Include="FAgregar_a.cs">

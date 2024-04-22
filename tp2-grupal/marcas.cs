@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace tp2_grupal
 {
-    internal class marcas
+    internal class Marca
     {
      public string nombre_marca {  get; set; }
      public int codigo_marca { get; set; }

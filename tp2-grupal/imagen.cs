@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace tp2_grupal
 {
-    class imagen
+    class Imagen
     {
-        public string Nobre_imagen { get; set; }
+        public string Nombre_imagen { get; set; }
         public int Codigo_imagen { get; set; }
        
         public void Cargar_imagen()
