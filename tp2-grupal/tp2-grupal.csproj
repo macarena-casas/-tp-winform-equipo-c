@@ -161,6 +161,7 @@
     <Compile Include="F_listar_i.Designer.cs">
       <DependentUpon>F_listar_i.cs</DependentUpon>
     </Compile>
+    <Compile Include="marca_negocio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Agregar Categoria.resx">
@@ -225,6 +226,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\marcas_datos.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
