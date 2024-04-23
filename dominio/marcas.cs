@@ -10,20 +10,10 @@ namespace dominio
     {
      public string Nombre {  get; set; }
      public int     Codigo { get; set; }
-     
 
-
-        public void listar_marcas()
+        public override string ToString()
         {
-
-        }
-        public void agregar_marca()
-        {
-
-        }
-        public void eliminar_marca()
-        {
-
+            return Nombre;
         }
     }
 }

@@ -10,7 +10,11 @@ namespace dominio
     {
         public string Nombre_imagen { get; set; }
         public int Codigo_imagen { get; set; }
-       
+
+        public override string ToString()
+        {
+            return Nombre_imagen;
+        }
         public void Cargar_imagen()
         {
 

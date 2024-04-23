@@ -42,7 +42,7 @@ namespace tp2_grupal
                     return;
             }
             FAgregar_a FAgra = new FAgregar_a();
-            FAgra.Show();
+            FAgra.ShowDialog();
         }
 
         private void b_Eliminar_Click(object sender, EventArgs e)

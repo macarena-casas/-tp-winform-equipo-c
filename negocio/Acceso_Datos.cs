@@ -32,6 +32,8 @@ namespace negocio
             comando.CommandText = consulta;
 
         }
+        
+
         public void ejecutarlectura ()
         {
             comando.Connection = conexion;
@@ -41,6 +43,21 @@ namespace negocio
             Lector = comando.ExecuteReader();
 
             }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public void ejecutaraccion()
+        { 
+            comando.Connection = conexion;
+            try
+            { 
+                conexion.Open();
+                comando.ExecuteNonQuery();
+                }
             catch (Exception ex)
             {
 

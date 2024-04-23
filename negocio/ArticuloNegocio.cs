@@ -9,7 +9,9 @@ using dominio;
 namespace negocio
 {
     public class ArticulosNegocio
+
     {
+
         public List <Articulos> listar()
         {
             List <Articulos> lista = new List <Articulos>();
@@ -18,7 +20,7 @@ namespace negocio
             try
             {
                
-                datos.setearconsulta("select Codigo, Nombre, Precio, A.Id , Descripcion, I.ImagenUrl from ARTICULOS A,IMAGENES I where I.Idarticulo=A.Id");
+                datos.setearconsulta("select Codigo, Nombre, Precio, A.Id , A.Descripcion, I.ImagenUrl,M.Descripcion Mar,C.Descripcion Cat from ARTICULOS A,IMAGENES I,MARCAS M, CATEGORIAS C where I.Idarticulo=A.Id and A.Id=M.Id and A.Id=C.Id");
                 datos.ejecutarlectura();               
                     while (datos.lector.Read())
                 {
@@ -30,7 +32,11 @@ namespace negocio
                     aux.Id_articulo = (int)datos.lector["Id"];
                     aux.imagen_articulo = new Imagen ();
                     aux.imagen_articulo.Nombre_imagen = (string)datos.lector["ImagenUrl"];
-
+                    aux.categoria_articulo = new Categoria();
+                    aux.categoria_articulo.nombre_categoria = (string)datos.lector["Cat"];
+                     aux.marca_articulo = new Marca();
+                    aux.marca_articulo.Nombre = (string)datos.lector["Mar"];
+                    
                     lista.Add(aux);
 
 
@@ -47,6 +53,27 @@ namespace negocio
             {
                 datos.cerrarconexion();
             }
+        }
+
+        public void agregar(Articulos nuevo)
+        {
+            Acceso_Datos datos = new Acceso_Datos();
+            try
+            {
+                datos.setearconsulta("insert into ARTICULOS (Codigo,Nombre,Descripcion,Precio) values ('" + nuevo.codigo_articulo + "','" + nuevo.nombre_articulo + "','" + nuevo.descripcion_articulo + "'," + nuevo.precio_articulo + ")");
+                //datos.setearconsulta("insert into ARTICULOS values ('" + nuevo.codigo_articulo + "','" + nuevo.nombre_articulo + "','" + nuevo.descripcion_articulo + "',1,1, " + nuevo.precio_articulo + ")");
+                datos.ejecutaraccion();
+            }
+            catch (Exception ex)
+            {
+               throw ex;
+
+            }
+            finally
+            {
+                datos.cerrarconexion();
+            }
+
         }
     }
 }

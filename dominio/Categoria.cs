@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 
 namespace dominio
 {
-     public class Categoria
+    public class Categoria
     {
-      
+
         public string nombre_categoria { get; set; }
         public int codigo_categoria { get; set; }
-       
 
-        public void ListarCategorias()
+        public override string ToString()
         {
-
+            return nombre_categoria;
         }
-        public void AgregarCategorias()
-        {
 
-        }
         public void EliminarCategorias()
         {
 

@@ -1,14 +1,14 @@
-﻿using dominio;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using dominio;
 
 namespace tp2_grupal
 {
-    internal class marca_negocio
+    public class marca_negocio
     {
         public List<Marca> Listar()
         {
