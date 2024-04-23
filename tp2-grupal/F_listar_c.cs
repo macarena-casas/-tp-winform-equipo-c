@@ -33,5 +33,10 @@ namespace tp2_grupal
             
 
         }
+
+        private void btn_salir_LC_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
