@@ -5,11 +5,47 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using dominio;
+using negocio;
 
 namespace tp2_grupal
 {
     public class marca_negocio
     {
+
+        public void Eliminar(int id)
+        {
+            try
+            {
+                Acceso_Datos datos = new Acceso_Datos();
+                datos.setearconsulta("DELETE FROM MARCAS WHERE Id = @id ");
+                //datos.setearparamerto("@id", id);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public void Agregar(Marca nueva_marca)
+        { 
+            Acceso_Datos datos = new Acceso_Datos();
+            
+            try
+            {
+                datos.setearconsulta("insert into MARCAS (Descripcion)Values ('"+ nueva_marca.Nombre +"')");
+                datos.ejecutaraccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarconexion();
+            }
+        }
+
         public List<Marca> Listar()
         {
             List<Marca> Lista_marca = new List<Marca>();

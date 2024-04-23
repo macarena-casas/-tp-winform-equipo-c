@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_idmarca = new System.Windows.Forms.TextBox();
             this.l_eliminar_marca = new System.Windows.Forms.Label();
             this.l_confirmar_eliminar_marca = new System.Windows.Forms.Label();
-            this.btn_marca_eliminar = new System.Windows.Forms.Button();
+            this.btn_aceptar_eliminar = new System.Windows.Forms.Button();
             this.btn_cancelar_eliminarmarca = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txt_idmarca
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.textBox1.Location = new System.Drawing.Point(211, 55);
-            this.textBox1.MaximumSize = new System.Drawing.Size(223, 23);
-            this.textBox1.MinimumSize = new System.Drawing.Size(223, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_idmarca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txt_idmarca.Location = new System.Drawing.Point(211, 55);
+            this.txt_idmarca.MaximumSize = new System.Drawing.Size(223, 23);
+            this.txt_idmarca.MinimumSize = new System.Drawing.Size(223, 23);
+            this.txt_idmarca.Name = "txt_idmarca";
+            this.txt_idmarca.Size = new System.Drawing.Size(223, 20);
+            this.txt_idmarca.TabIndex = 0;
+            this.txt_idmarca.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // l_eliminar_marca
             // 
@@ -71,24 +71,25 @@
             this.l_confirmar_eliminar_marca.TabIndex = 2;
             this.l_confirmar_eliminar_marca.Text = "Eliminar marca";
             // 
-            // btn_marca_eliminar
+            // btn_aceptar_eliminar
             // 
-            this.btn_marca_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btn_marca_eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_marca_eliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_marca_eliminar.FlatAppearance.BorderSize = 5;
-            this.btn_marca_eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btn_marca_eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_marca_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_marca_eliminar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_marca_eliminar.ForeColor = System.Drawing.Color.Black;
-            this.btn_marca_eliminar.Location = new System.Drawing.Point(211, 117);
-            this.btn_marca_eliminar.Name = "btn_marca_eliminar";
-            this.btn_marca_eliminar.Size = new System.Drawing.Size(109, 39);
-            this.btn_marca_eliminar.TabIndex = 3;
-            this.btn_marca_eliminar.Text = "Aceptar";
-            this.btn_marca_eliminar.UseVisualStyleBackColor = false;
-            this.btn_marca_eliminar.Click += new System.EventHandler(this.button1_Click);
+            this.btn_aceptar_eliminar.AccessibleDescription = "btn_eliminar";
+            this.btn_aceptar_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn_aceptar_eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_aceptar_eliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_aceptar_eliminar.FlatAppearance.BorderSize = 5;
+            this.btn_aceptar_eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btn_aceptar_eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_aceptar_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_aceptar_eliminar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_aceptar_eliminar.ForeColor = System.Drawing.Color.Black;
+            this.btn_aceptar_eliminar.Location = new System.Drawing.Point(211, 117);
+            this.btn_aceptar_eliminar.Name = "btn_aceptar_eliminar";
+            this.btn_aceptar_eliminar.Size = new System.Drawing.Size(109, 39);
+            this.btn_aceptar_eliminar.TabIndex = 3;
+            this.btn_aceptar_eliminar.Text = "Aceptar";
+            this.btn_aceptar_eliminar.UseVisualStyleBackColor = false;
+            this.btn_aceptar_eliminar.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_cancelar_eliminarmarca
             // 
@@ -115,10 +116,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.btn_cancelar_eliminarmarca);
-            this.Controls.Add(this.btn_marca_eliminar);
+            this.Controls.Add(this.btn_aceptar_eliminar);
             this.Controls.Add(this.l_confirmar_eliminar_marca);
             this.Controls.Add(this.l_eliminar_marca);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_idmarca);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(600, 500);
@@ -134,10 +135,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_idmarca;
         private System.Windows.Forms.Label l_eliminar_marca;
         private System.Windows.Forms.Label l_confirmar_eliminar_marca;
-        private System.Windows.Forms.Button btn_marca_eliminar;
+        private System.Windows.Forms.Button btn_aceptar_eliminar;
         private System.Windows.Forms.Button btn_cancelar_eliminarmarca;
     }
 }

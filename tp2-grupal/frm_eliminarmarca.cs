@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dominio;
+using negocio;
 
 namespace tp2_grupal
 {
@@ -34,7 +36,18 @@ namespace tp2_grupal
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Marca elim_marca = new Marca();
 
+            try
+            {
+                elim_marca.Codigo = int.Parse (txt_idmarca.Text);
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
 
         private void btn_cancelar_eliminarmarca_Click(object sender, EventArgs e)
