@@ -1,4 +1,5 @@
-﻿using System;
+﻿using negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace tp2_grupal
         public F_listar_i()
         {
             InitializeComponent();
+        }
+
+        private void dgv_listar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void F_listar_i_Load(object sender, EventArgs e)
+        {
+            imagen_negocio negocio = new imagen_negocio();
+            dgv_listar.DataSource = negocio.Listar();
         }
     }
 }
