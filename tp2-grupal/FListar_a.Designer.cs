@@ -38,22 +38,25 @@ namespace tp2_grupal
             // dgv_articulos
             // 
             this.dgv_articulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_articulos.Location = new System.Drawing.Point(12, 22);
+            this.dgv_articulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgv_articulos.Location = new System.Drawing.Point(10, 20);
             this.dgv_articulos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_articulos.MultiSelect = false;
             this.dgv_articulos.Name = "dgv_articulos";
             this.dgv_articulos.RowHeadersWidth = 72;
             this.dgv_articulos.RowTemplate.Height = 31;
-            this.dgv_articulos.Size = new System.Drawing.Size(609, 234);
+            this.dgv_articulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_articulos.Size = new System.Drawing.Size(780, 245);
             this.dgv_articulos.TabIndex = 0;
             this.dgv_articulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgv_articulos.SelectionChanged += new System.EventHandler(this.dgv_articulos_SelectionChanged);
             // 
             // pbx_articulos
             // 
-            this.pbx_articulos.Location = new System.Drawing.Point(158, 260);
+            this.pbx_articulos.Location = new System.Drawing.Point(242, 280);
             this.pbx_articulos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbx_articulos.Name = "pbx_articulos";
-            this.pbx_articulos.Size = new System.Drawing.Size(263, 194);
+            this.pbx_articulos.Size = new System.Drawing.Size(273, 245);
             this.pbx_articulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbx_articulos.TabIndex = 1;
             this.pbx_articulos.TabStop = false;
@@ -63,15 +66,15 @@ namespace tp2_grupal
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(626, 486);
+            this.ClientSize = new System.Drawing.Size(776, 536);
             this.Controls.Add(this.pbx_articulos);
             this.Controls.Add(this.dgv_articulos);
             this.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(650, 550);
-            this.MinimumSize = new System.Drawing.Size(650, 550);
+            this.MaximumSize = new System.Drawing.Size(800, 600);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "FListar_a";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listar Articulos";

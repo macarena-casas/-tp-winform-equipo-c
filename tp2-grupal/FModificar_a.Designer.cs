@@ -33,7 +33,9 @@ namespace tp2_grupal
             this.b_modif_a = new System.Windows.Forms.Button();
             this.b_cancel_ma = new System.Windows.Forms.Button();
             this.dgv_modificar_a = new System.Windows.Forms.DataGridView();
+            this.pb_modificar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_modificar_a)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_modificar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +59,7 @@ namespace tp2_grupal
             this.b_modif_a.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_modif_a.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_modif_a.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_modif_a.Location = new System.Drawing.Point(71, 334);
+            this.b_modif_a.Location = new System.Drawing.Point(143, 464);
             this.b_modif_a.Name = "b_modif_a";
             this.b_modif_a.Size = new System.Drawing.Size(150, 44);
             this.b_modif_a.TabIndex = 2;
@@ -75,7 +77,7 @@ namespace tp2_grupal
             this.b_cancel_ma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_cancel_ma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_cancel_ma.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_cancel_ma.Location = new System.Drawing.Point(302, 363);
+            this.b_cancel_ma.Location = new System.Drawing.Point(406, 464);
             this.b_cancel_ma.Name = "b_cancel_ma";
             this.b_cancel_ma.Size = new System.Drawing.Size(150, 44);
             this.b_cancel_ma.TabIndex = 3;
@@ -86,19 +88,34 @@ namespace tp2_grupal
             // dgv_modificar_a
             // 
             this.dgv_modificar_a.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_modificar_a.Location = new System.Drawing.Point(23, 80);
+            this.dgv_modificar_a.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgv_modificar_a.Location = new System.Drawing.Point(51, 63);
+            this.dgv_modificar_a.MultiSelect = false;
             this.dgv_modificar_a.Name = "dgv_modificar_a";
             this.dgv_modificar_a.RowHeadersWidth = 72;
             this.dgv_modificar_a.RowTemplate.Height = 31;
-            this.dgv_modificar_a.Size = new System.Drawing.Size(531, 219);
+            this.dgv_modificar_a.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_modificar_a.Size = new System.Drawing.Size(647, 219);
             this.dgv_modificar_a.TabIndex = 4;
+            this.dgv_modificar_a.SelectionChanged += new System.EventHandler(this.dgv_modificar_SeleccionCanged);
+            // 
+            // pb_modificar
+            // 
+            this.pb_modificar.Location = new System.Drawing.Point(265, 288);
+            this.pb_modificar.Name = "pb_modificar";
+            this.pb_modificar.Size = new System.Drawing.Size(189, 170);
+            this.pb_modificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_modificar.TabIndex = 5;
+            this.pb_modificar.TabStop = false;
+            this.pb_modificar.Click += new System.EventHandler(this.pb_modificar_Click);
             // 
             // FModificar_a
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.ClientSize = new System.Drawing.Size(776, 536);
+            this.Controls.Add(this.pb_modificar);
             this.Controls.Add(this.dgv_modificar_a);
             this.Controls.Add(this.b_cancel_ma);
             this.Controls.Add(this.b_modif_a);
@@ -107,13 +124,14 @@ namespace tp2_grupal
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(600, 500);
-            this.MinimumSize = new System.Drawing.Size(600, 500);
+            this.MaximumSize = new System.Drawing.Size(800, 600);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "FModificar_a";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Articulos";
             this.Load += new System.EventHandler(this.FModificar_a_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_modificar_a)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_modificar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,5 +143,6 @@ namespace tp2_grupal
         private System.Windows.Forms.Button b_modif_a;
         private System.Windows.Forms.Button b_cancel_ma;
         private System.Windows.Forms.DataGridView dgv_modificar_a;
+        private System.Windows.Forms.PictureBox pb_modificar;
     }
 }

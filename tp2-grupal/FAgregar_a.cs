@@ -25,7 +25,7 @@ namespace tp2_grupal
             InitializeComponent();
             this.articulos = art;
         }
-
+        
         private void tb_nombrea_TextChanged(object sender, EventArgs e)
         {
 
@@ -43,21 +43,30 @@ namespace tp2_grupal
 
         private void A_agregar_A_Click(object sender, EventArgs e)
         {
-            Articulos art = new Articulos();
+            
             ArticulosNegocio negocio = new ArticulosNegocio();
 
             try
             {
-                art.codigo_articulo = tb_codigoa.Text;
-                art.nombre_articulo = tb_nombrea.Text;
-                art.marca_articulo = (Marca) cb_marcas_a.SelectedItem;
-                art.categoria_articulo = (Categoria)cb_categorias_a.SelectedItem;
-                art.descripcion_articulo = r_detalle_a.Text;
-                art.precio_articulo = decimal.Parse(tb_precioa.Text) ;
-
-                negocio.agregar(art);
-                MessageBox.Show("Agregado con Exito");
-                Close();
+                if (articulos == null)
+                    articulos = new Articulos();
+                articulos.codigo_a = tb_codigoa.Text;
+                articulos.nombre_a = tb_nombrea.Text;
+                articulos.marca_a = (Marca) cb_marcas_a.SelectedItem;
+                articulos.categoria_a = (Categoria)cb_categorias_a.SelectedItem;
+                articulos.descripcion_a = r_detalle_a.Text;
+                articulos.precio_a = decimal.Parse(tb_precioa.Text) ;
+                if (articulos.Id_a!= 0)
+                { negocio.modificar(articulos);
+                    MessageBox.Show("Modificado con Exito");
+                    Close();
+                 
+                } else
+                { negocio.agregar(articulos);
+                    MessageBox.Show("Agregado con Exito");
+                    Close();
+                 
+                 }
 
             }
             catch (Exception ex)
@@ -74,12 +83,19 @@ namespace tp2_grupal
             try
             {
             cb_marcas_a.DataSource = marcanegocio.Listar();
+            cb_marcas_a.ValueMember = "Codigo";
+            cb_marcas_a.DisplayMember = "Nombre";   
             cb_categorias_a.DataSource = categorianegocio.listar();
+            cb_categorias_a.ValueMember = "codigo_categoria";
+            cb_categorias_a.DisplayMember = "nombre_categoria";
                 if (articulos != null)
-                {
-
-                    tb_nombrea.Text = articulos.nombre_articulo;
-                    tb_codigoa.Text = articulos.codigo_articulo;
+                { 
+                    tb_nombrea.Text = articulos.nombre_a;
+                    tb_codigoa.Text = articulos.codigo_a;
+                    tb_precioa.Text = articulos.precio_a.ToString();
+                    r_detalle_a.Text = articulos.descripcion_a;
+                    cb_categorias_a.SelectedValue = articulos.categoria_a.codigo_categoria;
+                    cb_marcas_a.SelectedValue = articulos.marca_a.Codigo;
                 }
 
             }
