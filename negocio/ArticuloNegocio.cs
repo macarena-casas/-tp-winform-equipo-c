@@ -61,7 +61,10 @@ namespace negocio
             try
             {
                 datos.setearconsulta("insert into ARTICULOS (Codigo,Nombre,Descripcion,Precio) values ('" + nuevo.codigo_articulo + "','" + nuevo.nombre_articulo + "','" + nuevo.descripcion_articulo + "'," + nuevo.precio_articulo + ")");
-                //datos.setearconsulta("insert into ARTICULOS values ('" + nuevo.codigo_articulo + "','" + nuevo.nombre_articulo + "','" + nuevo.descripcion_articulo + "',1,1, " + nuevo.precio_articulo + ")");
+               // datos.setearconsulta("insert into ARTICULOS values ('" + nuevo.codigo_articulo + "','" + nuevo.nombre_articulo + "','" + nuevo.descripcion_articulo + "',@categoria,@marca , " + nuevo.precio_articulo + ")");
+                //datos.agregarParametro("@categoria", nuevo.categoria_articulo);
+                //datos.agregarParametro("@marca", nuevo.marca_articulo);
+                
                 datos.ejecutaraccion();
             }
             catch (Exception ex)

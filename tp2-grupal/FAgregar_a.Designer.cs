@@ -66,7 +66,7 @@ namespace tp2_grupal
             this.tb_nombrea.Location = new System.Drawing.Point(226, 6);
             this.tb_nombrea.Name = "tb_nombrea";
             this.tb_nombrea.Size = new System.Drawing.Size(223, 34);
-            this.tb_nombrea.TabIndex = 1;
+            this.tb_nombrea.TabIndex = 0;
             this.tb_nombrea.TextChanged += new System.EventHandler(this.tb_nombrea_TextChanged);
             // 
             // l_marca_a
@@ -167,7 +167,7 @@ namespace tp2_grupal
             this.cb_marcas_a.Location = new System.Drawing.Point(227, 96);
             this.cb_marcas_a.Name = "cb_marcas_a";
             this.cb_marcas_a.Size = new System.Drawing.Size(222, 38);
-            this.cb_marcas_a.TabIndex = 8;
+            this.cb_marcas_a.TabIndex = 2;
             // 
             // cb_categorias_a
             // 
@@ -178,7 +178,7 @@ namespace tp2_grupal
             this.cb_categorias_a.Location = new System.Drawing.Point(226, 147);
             this.cb_categorias_a.Name = "cb_categorias_a";
             this.cb_categorias_a.Size = new System.Drawing.Size(223, 38);
-            this.cb_categorias_a.TabIndex = 9;
+            this.cb_categorias_a.TabIndex = 3;
             // 
             // l_precioa
             // 
@@ -198,7 +198,7 @@ namespace tp2_grupal
             this.tb_precioa.Location = new System.Drawing.Point(227, 202);
             this.tb_precioa.Name = "tb_precioa";
             this.tb_precioa.Size = new System.Drawing.Size(223, 37);
-            this.tb_precioa.TabIndex = 11;
+            this.tb_precioa.TabIndex = 4;
             // 
             // tb_codigoa
             // 
@@ -207,7 +207,7 @@ namespace tp2_grupal
             this.tb_codigoa.Location = new System.Drawing.Point(226, 46);
             this.tb_codigoa.Name = "tb_codigoa";
             this.tb_codigoa.Size = new System.Drawing.Size(223, 37);
-            this.tb_codigoa.TabIndex = 12;
+            this.tb_codigoa.TabIndex = 1;
             // 
             // l_codigoa
             // 

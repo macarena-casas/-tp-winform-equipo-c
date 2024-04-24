@@ -15,13 +15,16 @@ namespace tp2_grupal
 {
     public partial class FAgregar_a : Form
     {
+        private Articulos articulos = null;
         public FAgregar_a()
         {
             InitializeComponent();
         }
-
-       
-
+                public FAgregar_a(Articulos art)
+        {
+            InitializeComponent();
+            this.articulos = art;
+        }
 
         private void tb_nombrea_TextChanged(object sender, EventArgs e)
         {
@@ -47,8 +50,8 @@ namespace tp2_grupal
             {
                 art.codigo_articulo = tb_codigoa.Text;
                 art.nombre_articulo = tb_nombrea.Text;
-                //art.marca_articulo = (Marca) cb_marcas_a.SelectedItem;
-               // art.categoria_articulo = (Categoria)cb_categorias_a.SelectedItem;
+                art.marca_articulo = (Marca) cb_marcas_a.SelectedItem;
+                art.categoria_articulo = (Categoria)cb_categorias_a.SelectedItem;
                 art.descripcion_articulo = r_detalle_a.Text;
                 art.precio_articulo = decimal.Parse(tb_precioa.Text) ;
 
@@ -72,6 +75,13 @@ namespace tp2_grupal
             {
             cb_marcas_a.DataSource = marcanegocio.Listar();
             cb_categorias_a.DataSource = categorianegocio.listar();
+                if (articulos != null)
+                {
+
+                    tb_nombrea.Text = articulos.nombre_articulo;
+                    tb_codigoa.Text = articulos.codigo_articulo;
+                }
+
             }
             catch (Exception ex)
             {

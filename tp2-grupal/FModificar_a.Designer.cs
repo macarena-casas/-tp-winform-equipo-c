@@ -30,9 +30,10 @@ namespace tp2_grupal
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.tex_modif_a = new System.Windows.Forms.TextBox();
-            this.b_acep_ma = new System.Windows.Forms.Button();
+            this.b_modif_a = new System.Windows.Forms.Button();
             this.b_cancel_ma = new System.Windows.Forms.Button();
+            this.dgv_modificar_a = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_modificar_a)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -40,39 +41,29 @@ namespace tp2_grupal
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 50);
+            this.label1.Location = new System.Drawing.Point(26, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(365, 18);
+            this.label1.Size = new System.Drawing.Size(583, 32);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ingrese el codigo del articulo que desea modificar:";
+            this.label1.Text = "Seleccione el articulo que desea modificar:";
             // 
-            // tex_modif_a
+            // b_modif_a
             // 
-            this.tex_modif_a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.tex_modif_a.Font = new System.Drawing.Font("Arial", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tex_modif_a.Location = new System.Drawing.Point(386, 48);
-            this.tex_modif_a.MaximumSize = new System.Drawing.Size(170, 34);
-            this.tex_modif_a.MinimumSize = new System.Drawing.Size(170, 34);
-            this.tex_modif_a.Name = "tex_modif_a";
-            this.tex_modif_a.Size = new System.Drawing.Size(170, 23);
-            this.tex_modif_a.TabIndex = 1;
-            // 
-            // b_acep_ma
-            // 
-            this.b_acep_ma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.b_acep_ma.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_acep_ma.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.b_acep_ma.FlatAppearance.BorderSize = 3;
-            this.b_acep_ma.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.b_acep_ma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
-            this.b_acep_ma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_acep_ma.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_acep_ma.Location = new System.Drawing.Point(90, 288);
-            this.b_acep_ma.Name = "b_acep_ma";
-            this.b_acep_ma.Size = new System.Drawing.Size(150, 44);
-            this.b_acep_ma.TabIndex = 2;
-            this.b_acep_ma.Text = "&Aceptar";
-            this.b_acep_ma.UseVisualStyleBackColor = false;
+            this.b_modif_a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.b_modif_a.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_modif_a.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.b_modif_a.FlatAppearance.BorderSize = 3;
+            this.b_modif_a.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.b_modif_a.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
+            this.b_modif_a.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_modif_a.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_modif_a.Location = new System.Drawing.Point(71, 334);
+            this.b_modif_a.Name = "b_modif_a";
+            this.b_modif_a.Size = new System.Drawing.Size(150, 44);
+            this.b_modif_a.TabIndex = 2;
+            this.b_modif_a.Text = "&Modificar";
+            this.b_modif_a.UseVisualStyleBackColor = false;
+            this.b_modif_a.Click += new System.EventHandler(this.b_modif_a_Click);
             // 
             // b_cancel_ma
             // 
@@ -84,7 +75,7 @@ namespace tp2_grupal
             this.b_cancel_ma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_cancel_ma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_cancel_ma.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_cancel_ma.Location = new System.Drawing.Point(302, 288);
+            this.b_cancel_ma.Location = new System.Drawing.Point(302, 363);
             this.b_cancel_ma.Name = "b_cancel_ma";
             this.b_cancel_ma.Size = new System.Drawing.Size(150, 44);
             this.b_cancel_ma.TabIndex = 3;
@@ -92,15 +83,25 @@ namespace tp2_grupal
             this.b_cancel_ma.UseVisualStyleBackColor = false;
             this.b_cancel_ma.Click += new System.EventHandler(this.b_cancel_ma_Click);
             // 
+            // dgv_modificar_a
+            // 
+            this.dgv_modificar_a.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_modificar_a.Location = new System.Drawing.Point(23, 80);
+            this.dgv_modificar_a.Name = "dgv_modificar_a";
+            this.dgv_modificar_a.RowHeadersWidth = 72;
+            this.dgv_modificar_a.RowTemplate.Height = 31;
+            this.dgv_modificar_a.Size = new System.Drawing.Size(531, 219);
+            this.dgv_modificar_a.TabIndex = 4;
+            // 
             // FModificar_a
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.Controls.Add(this.dgv_modificar_a);
             this.Controls.Add(this.b_cancel_ma);
-            this.Controls.Add(this.b_acep_ma);
-            this.Controls.Add(this.tex_modif_a);
+            this.Controls.Add(this.b_modif_a);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -111,6 +112,8 @@ namespace tp2_grupal
             this.Name = "FModificar_a";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Articulos";
+            this.Load += new System.EventHandler(this.FModificar_a_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_modificar_a)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,8 +122,8 @@ namespace tp2_grupal
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tex_modif_a;
-        private System.Windows.Forms.Button b_acep_ma;
+        private System.Windows.Forms.Button b_modif_a;
         private System.Windows.Forms.Button b_cancel_ma;
+        private System.Windows.Forms.DataGridView dgv_modificar_a;
     }
 }
