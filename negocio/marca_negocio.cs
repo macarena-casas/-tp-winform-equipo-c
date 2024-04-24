@@ -17,14 +17,17 @@ namespace tp2_grupal
             try
             {
                 Acceso_Datos datos = new Acceso_Datos();
-                datos.setearconsulta("DELETE FROM MARCAS WHERE Id = @id ");
-                //datos.setearparamerto("@id", id);
+                datos.setearconsulta("DELETE FROM MARCAS WHERE Id = @Id ");
+                datos.setearparametro("@Id", id);
+                datos.ejecutaraccion();
+                
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
+
         }
         public void Agregar(Marca nueva_marca)
         { 
