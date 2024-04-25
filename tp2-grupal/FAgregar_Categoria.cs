@@ -49,14 +49,14 @@ namespace tp2_grupal
                 if (categorias.codigo_categoria != 0)
                 {
                     categoriaN.modificar(categorias);
-                    MessageBox.Show("Modificado con Exito");
+                    MessageBox.Show("MODIFICADO CON EXITO");
                     Close();
 
                 }
                 else
                 {
                     categoriaN.agregar(categorias);
-                    MessageBox.Show("Agregado con Exito");
+                    MessageBox.Show("AGREGADO CON EXITO");
                     Close();
 
                 }

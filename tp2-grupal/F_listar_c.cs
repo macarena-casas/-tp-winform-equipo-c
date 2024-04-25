@@ -64,5 +64,16 @@ namespace tp2_grupal
             modificar.ShowDialog();
             cargar();
         }
+
+        private void Eliminar_c_Click(object sender, EventArgs e)
+        {
+            Categoria seleccionado;
+            seleccionado = (Categoria)dgv_Categoria.CurrentRow.DataBoundItem;
+
+            FAgregar_Categoria eliminar = new FAgregar_Categoria(seleccionado);
+            eliminar.ShowDialog();
+            cargar();
+
+        }
     }
 }

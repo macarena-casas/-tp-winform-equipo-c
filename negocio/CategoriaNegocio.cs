@@ -83,6 +83,26 @@ namespace negocio
                 throw ex;
             }
         }
+        public void Eliminar (int Id)
+        {
+            try
+            {
+                Acceso_Datos datos = new Acceso_Datos();
+                datos.setearconsulta("DELETE FROM CATEGORIA WHERE Id = @Id ");
+                datos.setearparametro("@Id", Id);
+                datos.ejecutaraccion();
+
+            
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+        }
 
 }
 }

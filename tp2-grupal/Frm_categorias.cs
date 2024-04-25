@@ -25,7 +25,7 @@ namespace tp2_grupal
         }
 
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_listar_modi_Click(object sender, EventArgs e)
         {
             foreach (var item in Application.OpenForms)
             {
@@ -52,15 +52,30 @@ namespace tp2_grupal
             Fagrec.Show();
         }
 
-        private void M_categoria_Click(object sender, EventArgs e)
+        private void b_eliminar_c_Click(object sender, EventArgs e)
         {
-            foreach (var item in Application.OpenForms)
+            CategoriaNegocio categoria = new CategoriaNegocio();
+            Categoria elim_Cate;
+            int aux;
+
+            try
             {
-                if (item.GetType() == typeof(F_listar_c))
-                    return;
+                DialogResult respuesta = MessageBox.Show("se eliminara la categoria seleccionada, ¿continuar?", "ELIMINAR CATEGORIA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (respuesta == DialogResult.Yes)
+                {
+                    elim_Cate = (Categoria)dgv_Categoria.CurrentRow.DataBoundItem;
+                    aux = elim_Cate.codigo_categoria;
+                    categoria.Eliminar(aux);
+                    dgv_categoria.DataSource = CategoriaNegocio.Listar();
+                }
+                }
+                
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
             }
-            F_listar_c Flist = new F_listar_c();
-            Flist.Show();
         }
     }
 }

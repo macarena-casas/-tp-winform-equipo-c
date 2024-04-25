@@ -40,7 +40,7 @@
             this.l_listarmarca.AutoSize = true;
             this.l_listarmarca.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_listarmarca.ForeColor = System.Drawing.Color.White;
-            this.l_listarmarca.Location = new System.Drawing.Point(210, 9);
+            this.l_listarmarca.Location = new System.Drawing.Point(202, 9);
             this.l_listarmarca.Name = "l_listarmarca";
             this.l_listarmarca.Size = new System.Drawing.Size(83, 24);
             this.l_listarmarca.TabIndex = 1;

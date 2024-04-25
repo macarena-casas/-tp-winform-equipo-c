@@ -106,4 +106,7 @@ insert into imagenes values
 (5, 'https://cnnespanol2.files.wordpress.com/2015/12/gadgets-mc3a1s-populares-apple-tv-2015-18.jpg?quality=100&strip=info&w=460&h=260&crop=1')
 */
 select * from CATEGORIAS
+select * from MARCAS
 select Id, DESCRIPCION from CATEGORIAS
+insert into CATEGORIAS values ('')
+--update CATEGORIAS set  Nombre

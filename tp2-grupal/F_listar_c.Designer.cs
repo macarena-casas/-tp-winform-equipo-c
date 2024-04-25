@@ -32,6 +32,7 @@ namespace tp2_grupal
             this.dgv_Categoria = new System.Windows.Forms.DataGridView();
             this.btn_salir_LC = new System.Windows.Forms.Button();
             this.M_categoria = new System.Windows.Forms.Button();
+            this.Eliminar_c = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Categoria)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@ namespace tp2_grupal
             this.btn_salir_LC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_salir_LC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.btn_salir_LC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_salir_LC.Location = new System.Drawing.Point(289, 316);
+            this.btn_salir_LC.Location = new System.Drawing.Point(356, 316);
             this.btn_salir_LC.Name = "btn_salir_LC";
             this.btn_salir_LC.Size = new System.Drawing.Size(95, 36);
             this.btn_salir_LC.TabIndex = 1;
@@ -70,7 +71,7 @@ namespace tp2_grupal
             this.M_categoria.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.M_categoria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.M_categoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M_categoria.Location = new System.Drawing.Point(171, 316);
+            this.M_categoria.Location = new System.Drawing.Point(113, 316);
             this.M_categoria.Name = "M_categoria";
             this.M_categoria.Size = new System.Drawing.Size(95, 36);
             this.M_categoria.TabIndex = 2;
@@ -78,12 +79,23 @@ namespace tp2_grupal
             this.M_categoria.UseVisualStyleBackColor = false;
             this.M_categoria.Click += new System.EventHandler(this.M_categoria_Click);
             // 
+            // Eliminar_c
+            // 
+            this.Eliminar_c.Location = new System.Drawing.Point(233, 316);
+            this.Eliminar_c.Name = "Eliminar_c";
+            this.Eliminar_c.Size = new System.Drawing.Size(95, 36);
+            this.Eliminar_c.TabIndex = 3;
+            this.Eliminar_c.Text = "Eliminar";
+            this.Eliminar_c.UseVisualStyleBackColor = true;
+            this.Eliminar_c.Click += new System.EventHandler(this.Eliminar_c_Click);
+            // 
             // F_listar_c
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.Eliminar_c);
             this.Controls.Add(this.M_categoria);
             this.Controls.Add(this.btn_salir_LC);
             this.Controls.Add(this.dgv_Categoria);
@@ -107,5 +119,6 @@ namespace tp2_grupal
         private System.Windows.Forms.DataGridView dgv_Categoria;
         private System.Windows.Forms.Button btn_salir_LC;
         private System.Windows.Forms.Button M_categoria;
+        private System.Windows.Forms.Button Eliminar_c;
     }
 }
