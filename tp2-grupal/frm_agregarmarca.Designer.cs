@@ -42,6 +42,7 @@
             this.txt_agregarmarca.Name = "txt_agregarmarca";
             this.txt_agregarmarca.Size = new System.Drawing.Size(253, 20);
             this.txt_agregarmarca.TabIndex = 0;
+            this.txt_agregarmarca.TextChanged += new System.EventHandler(this.txt_agregarmarca_TextChanged);
             // 
             // l_nombremarca_agregarmarca
             // 

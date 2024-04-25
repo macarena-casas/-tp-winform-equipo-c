@@ -86,6 +86,11 @@ namespace tp2_grupal
                 pb_modificar.Load("https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg");
             }
         }
+
+        private void dgv_modificar_a_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     
 }

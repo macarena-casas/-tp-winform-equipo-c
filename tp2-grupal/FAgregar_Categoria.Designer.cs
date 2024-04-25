@@ -30,9 +30,7 @@ namespace tp2_grupal
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_nom_cat = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.A_categoria = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -49,39 +47,22 @@ namespace tp2_grupal
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre de categoria a agregar :";
             // 
-            // textBox1
+            // tb_nom_cat
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.textBox1.Location = new System.Drawing.Point(278, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(26, 133);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tipo  de categoria :";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.textBox2.Location = new System.Drawing.Point(278, 131);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 20);
-            this.textBox2.TabIndex = 3;
+            this.tb_nom_cat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tb_nom_cat.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_nom_cat.Location = new System.Drawing.Point(278, 59);
+            this.tb_nom_cat.Name = "tb_nom_cat";
+            this.tb_nom_cat.Size = new System.Drawing.Size(216, 25);
+            this.tb_nom_cat.TabIndex = 1;
+            this.tb_nom_cat.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(26, 221);
+            this.label3.Location = new System.Drawing.Point(26, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 18);
             this.label3.TabIndex = 4;
@@ -98,12 +79,13 @@ namespace tp2_grupal
             this.A_categoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A_categoria.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A_categoria.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.A_categoria.Location = new System.Drawing.Point(251, 221);
+            this.A_categoria.Location = new System.Drawing.Point(278, 128);
             this.A_categoria.Name = "A_categoria";
             this.A_categoria.Size = new System.Drawing.Size(100, 38);
             this.A_categoria.TabIndex = 5;
             this.A_categoria.Text = "Aceptar";
             this.A_categoria.UseVisualStyleBackColor = false;
+            this.A_categoria.Click += new System.EventHandler(this.A_categoria_Click);
             // 
             // button2
             // 
@@ -114,7 +96,7 @@ namespace tp2_grupal
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(394, 221);
+            this.button2.Location = new System.Drawing.Point(394, 128);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 38);
             this.button2.TabIndex = 6;
@@ -131,9 +113,7 @@ namespace tp2_grupal
             this.Controls.Add(this.button2);
             this.Controls.Add(this.A_categoria);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_nom_cat);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -142,6 +122,7 @@ namespace tp2_grupal
             this.Name = "FAgregar_Categoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Categoria";
+            this.Load += new System.EventHandler(this.FAgregar_Categoria_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,9 +131,7 @@ namespace tp2_grupal
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_nom_cat;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button A_categoria;
         private System.Windows.Forms.Button button2;

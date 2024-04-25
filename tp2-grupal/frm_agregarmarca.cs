@@ -41,5 +41,10 @@ namespace tp2_grupal
         {
             Close();    
         }
+
+        private void txt_agregarmarca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

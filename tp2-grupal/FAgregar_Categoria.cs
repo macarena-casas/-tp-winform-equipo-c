@@ -7,19 +7,87 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dominio;
+using negocio;
 
 namespace tp2_grupal
 {
     public partial class FAgregar_Categoria : Form
     {
+        private Categoria categorias = null;
         public FAgregar_Categoria()
         {
             InitializeComponent();
+        }
+        public FAgregar_Categoria (Categoria Cat)
+        {
+            InitializeComponent();
+            this.categorias = Cat;
         }
 
         private void b_cancelar_c_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void A_categoria_Click(object sender, EventArgs e)
+        {
+            
+            CategoriaNegocio categoriaN = new CategoriaNegocio();
+
+            try
+            {
+                if (categorias == null)
+                    categorias = new Categoria();
+                categorias.nombre_categoria = tb_nom_cat.Text;
+               
+                if (categorias.codigo_categoria != 0)
+                {
+                    categoriaN.modificar(categorias);
+                    MessageBox.Show("Modificado con Exito");
+                    Close();
+
+                }
+                else
+                {
+                    categoriaN.agregar(categorias);
+                    MessageBox.Show("Agregado con Exito");
+                    Close();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+              
+            }
+
+
+
+        }
+
+        private void FAgregar_Categoria_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                if (categorias != null)
+                {
+                    tb_nom_cat.Text = categorias.nombre_categoria;
+                   
+                }
+                 }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
         }
     }
 }

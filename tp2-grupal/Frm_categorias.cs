@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dominio;
+using negocio;
+
 
 namespace tp2_grupal
 {
@@ -15,7 +18,12 @@ namespace tp2_grupal
         public Frm_categorias()
         {
             InitializeComponent();
+        } 
+        public Frm_categorias(Categoria seleccionado)
+        {
+            InitializeComponent();
         }
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -42,6 +50,17 @@ namespace tp2_grupal
             }
             FAgregar_Categoria Fagrec = new FAgregar_Categoria();
             Fagrec.Show();
+        }
+
+        private void M_categoria_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(F_listar_c))
+                    return;
+            }
+            F_listar_c Flist = new F_listar_c();
+            Flist.Show();
         }
     }
 }

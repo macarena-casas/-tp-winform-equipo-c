@@ -45,7 +45,7 @@ namespace tp2_grupal
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(26, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(583, 32);
+            this.label1.Size = new System.Drawing.Size(312, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Seleccione el articulo que desea modificar:";
             // 
@@ -97,6 +97,7 @@ namespace tp2_grupal
             this.dgv_modificar_a.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_modificar_a.Size = new System.Drawing.Size(647, 219);
             this.dgv_modificar_a.TabIndex = 4;
+            this.dgv_modificar_a.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_modificar_a_CellContentClick);
             this.dgv_modificar_a.SelectionChanged += new System.EventHandler(this.dgv_modificar_SeleccionCanged);
             // 
             // pb_modificar
@@ -111,10 +112,10 @@ namespace tp2_grupal
             // 
             // FModificar_a
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(776, 536);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.pb_modificar);
             this.Controls.Add(this.dgv_modificar_a);
             this.Controls.Add(this.b_cancel_ma);

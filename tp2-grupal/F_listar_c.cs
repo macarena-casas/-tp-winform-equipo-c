@@ -24,7 +24,23 @@ namespace tp2_grupal
         {
 
         }
+        private void cargar()
+        {
+            CategoriaNegocio negocio = new CategoriaNegocio();
+            try
+            {
 
+                lista_Categoria = negocio.listar();
+                dgv_Categoria.DataSource = lista_Categoria;
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+
+            }
+
+        }
         private void F_listar_c_Load(object sender, EventArgs e)
         {
             CategoriaNegocio negocio = new CategoriaNegocio();
@@ -37,6 +53,16 @@ namespace tp2_grupal
         private void btn_salir_LC_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void M_categoria_Click(object sender, EventArgs e)
+        {
+            Categoria seleccionado;
+            seleccionado = (Categoria)dgv_Categoria.CurrentRow.DataBoundItem;
+
+            FAgregar_Categoria modificar = new FAgregar_Categoria(seleccionado);
+            modificar.ShowDialog();
+            cargar();
         }
     }
 }
