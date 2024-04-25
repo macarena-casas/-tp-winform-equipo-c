@@ -20,7 +20,7 @@ namespace negocio
             try
             {
                
-                datos.setearconsulta("select Codigo, Nombre, Precio, A.Id , A.Descripcion, I.ImagenUrl,M.Descripcion Marca,A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, IMAGENES I, MARCAS M, CATEGORIAS C where A.Id=I.Idarticulo and A.IdMarca=M.Id and A.IdCategoria=C.Id ");
+                datos.setearconsulta("select Codigo, Nombre, Precio, A.Id , A.Descripcion, I.ImagenUrl,M.Descripcion Marca,A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS AS A left JOIN MARCAS M ON A.IdMarca = M.Id left JOIN CATEGORIAS C ON A.IdCategoria = C.Id left JOIN IMAGENES I ON A.Id = I.Idarticulo");
                 datos.ejecutarlectura();               
                     while (datos.lector.Read())
                 {
@@ -31,11 +31,14 @@ namespace negocio
                     aux.descripcion_a = (string)datos.lector["Descripcion"];
                     aux.Id_a = (int)datos.lector["Id"];
                     aux.imagen_a= new Imagen ();
+                    if(!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ImagenUrl")) ))
                     aux.imagen_a.Nombre_imagen = (string)datos.lector["ImagenUrl"];
                     aux.categoria_a = new Categoria();
+                    if(!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria")) ))
                     aux.categoria_a.nombre_categoria = (string)datos.lector["Categoria"];
                     aux.categoria_a.codigo_categoria = (int)datos.lector["IdCategoria"];
                     aux.marca_a = new Marca();
+                   if(!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Marca")) ))
                     aux.marca_a.Nombre = (string)datos.lector["Marca"];
                     aux.marca_a.Codigo = (int)datos.lector["IdMarca"];
                     
@@ -63,10 +66,9 @@ namespace negocio
             Acceso_Datos datos = new Acceso_Datos();
             try
             {
-               datos.setearconsulta("insert into ARTICULOS (Codigo,Nombre,Descripcion,Precio) values ('" + nuevo.codigo_a + "','" + nuevo.nombre_a + "','" + nuevo.descripcion_a+ "'," + nuevo.precio_a + ")");
-              //  datos.setearconsulta("insert into ARTICULOS values ('" + nuevo.codigo_articulo + "','" + nuevo.nombre_articulo + "','" + nuevo.descripcion_articulo + "',@categoria, @marca , " + nuevo.precio_articulo + ")");
-                //datos.setearparametro("@categoria", nuevo.categoria_articulo);
-              //  datos.setearparametro("@marca", nuevo.marca_articulo);
+               datos.setearconsulta("insert into ARTICULOS values ('" + nuevo.codigo_a + "','" + nuevo.nombre_a + "','" + nuevo.descripcion_a+ "',IdCategoria=@categoria, @marca , " + nuevo.precio_a + ")");
+               datos.setearparametro("@categoria", nuevo.categoria_a.codigo_categoria);
+               datos.setearparametro("@marca", nuevo.marca_a.Codigo);
                 
                 datos.ejecutaraccion();
             }

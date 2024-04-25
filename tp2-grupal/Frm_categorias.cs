@@ -64,10 +64,10 @@ namespace tp2_grupal
 
                 if (respuesta == DialogResult.Yes)
                 {
-                    elim_Cate = (Categoria)dgv_Categoria.CurrentRow.DataBoundItem;
+                    /*elim_Cate = (Categoria)dgv_Categoria.CurrentRow.DataBoundItem;
                     aux = elim_Cate.codigo_categoria;
                     categoria.Eliminar(aux);
-                    dgv_categoria.DataSource = CategoriaNegocio.Listar();
+                    dgv_Categoria.DataSource = categoria.listar();*/
                 }
                 }
                 

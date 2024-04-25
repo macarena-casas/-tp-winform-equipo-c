@@ -85,7 +85,7 @@ namespace tp2_grupal
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
 
         }
