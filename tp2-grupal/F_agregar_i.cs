@@ -39,30 +39,60 @@ namespace tp2_grupal
 
         }
 
+        /*private void b_acep_ai_Click(object sender, EventArgs e)
+         {
+             List<Imagen> Lista_imagen = new List<Imagen>();
+             Imagen  ima = new Imagen(); 
+             imagen_negocio negocio = new imagen_negocio();
+             try
+             {
+
+                 ima.id_articulo = int.Parse(txt_idarticulo.Text);
+                 ima.Nombre_imagen = txt_imagen.Text;
+                 negocio.agregar(ima);
+
+                 Lista_imagen.Add(ima);
+                 MessageBox.Show("agregado exitosamente");
+                 Close();
+             }
+
+             catch (Exception ex)
+             {
+
+                 MessageBox.Show(ex.ToString());
+             }
+         }*/
+
+        ///------------------------- nuevo agregar--------------------
         private void b_acep_ai_Click(object sender, EventArgs e)
         {
             List<Imagen> Lista_imagen = new List<Imagen>();
-            Imagen  ima = new Imagen(); 
+            Imagen ima = new Imagen();
+            Articulos auxi = new Articulos();
             imagen_negocio negocio = new imagen_negocio();
+            ArticulosNegocio negocioarticulo = new ArticulosNegocio();
+            Acceso_Datos datos = new Acceso_Datos();
             try
             {
-               
+                
                 ima.id_articulo = int.Parse(txt_idarticulo.Text);
                 ima.Nombre_imagen = txt_imagen.Text;
+                ima.nombre_articulo = txt_nombrearticulo.Text;
+                
                 negocio.agregar(ima);
 
                 Lista_imagen.Add(ima);
                 MessageBox.Show("agregado exitosamente");
                 Close();
             }
-      
+
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.ToString());
             }
         }
-
+        ///---------------------------fin de el intento-------------
         private void label2_Click_1(object sender, EventArgs e)
         {
 
