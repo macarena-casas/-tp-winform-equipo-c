@@ -31,7 +31,6 @@ namespace tp2_grupal
         {
             this.b_agregar_im = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.b_elim_i = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,8 +44,8 @@ namespace tp2_grupal
             this.b_agregar_im.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_agregar_im.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_agregar_im.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_agregar_im.Location = new System.Drawing.Point(209, 48);
-            this.b_agregar_im.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.b_agregar_im.Location = new System.Drawing.Point(29, 77);
+            this.b_agregar_im.Margin = new System.Windows.Forms.Padding(10);
             this.b_agregar_im.Name = "b_agregar_im";
             this.b_agregar_im.Size = new System.Drawing.Size(122, 45);
             this.b_agregar_im.TabIndex = 0;
@@ -64,33 +63,14 @@ namespace tp2_grupal
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(209, 141);
-            this.button2.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.button2.Location = new System.Drawing.Point(239, 77);
+            this.button2.Margin = new System.Windows.Forms.Padding(10);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 45);
             this.button2.TabIndex = 1;
             this.button2.Text = "Listar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // b_elim_i
-            // 
-            this.b_elim_i.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.b_elim_i.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_elim_i.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.b_elim_i.FlatAppearance.BorderSize = 5;
-            this.b_elim_i.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.b_elim_i.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(57)))));
-            this.b_elim_i.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_elim_i.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_elim_i.Location = new System.Drawing.Point(209, 233);
-            this.b_elim_i.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
-            this.b_elim_i.Name = "b_elim_i";
-            this.b_elim_i.Size = new System.Drawing.Size(122, 45);
-            this.b_elim_i.TabIndex = 2;
-            this.b_elim_i.Text = "Eliminar";
-            this.b_elim_i.UseVisualStyleBackColor = false;
-            this.b_elim_i.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -102,8 +82,8 @@ namespace tp2_grupal
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(209, 331);
-            this.button4.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.button4.Location = new System.Drawing.Point(443, 77);
+            this.button4.Margin = new System.Windows.Forms.Padding(10);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(122, 45);
             this.button4.TabIndex = 3;
@@ -113,20 +93,19 @@ namespace tp2_grupal
             // 
             // Frm_Imagen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.ClientSize = new System.Drawing.Size(584, 205);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.b_elim_i);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.b_agregar_im);
             this.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.Margin = new System.Windows.Forms.Padding(10);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(600, 500);
-            this.MinimumSize = new System.Drawing.Size(600, 500);
+            this.MaximumSize = new System.Drawing.Size(600, 244);
+            this.MinimumSize = new System.Drawing.Size(600, 244);
             this.Name = "Frm_Imagen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Imagen";
@@ -138,7 +117,6 @@ namespace tp2_grupal
 
         private System.Windows.Forms.Button b_agregar_im;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button b_elim_i;
         private System.Windows.Forms.Button button4;
     }
 }

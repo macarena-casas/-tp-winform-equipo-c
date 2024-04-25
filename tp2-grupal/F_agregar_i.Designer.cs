@@ -31,6 +31,12 @@ namespace tp2_grupal
         {
             this.b_cancel_ai = new System.Windows.Forms.Button();
             this.b_acep_ai = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_idarticulo = new System.Windows.Forms.TextBox();
+            this.txt_imagen = new System.Windows.Forms.TextBox();
+            this.txt_nombrearticulo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // b_cancel_ai
@@ -69,25 +75,90 @@ namespace tp2_grupal
             this.b_acep_ai.TabIndex = 1;
             this.b_acep_ai.Text = "&Aceptar";
             this.b_acep_ai.UseVisualStyleBackColor = false;
+            this.b_acep_ai.Click += new System.EventHandler(this.b_acep_ai_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(152, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 18);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Id Articulo";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(133, 178);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 18);
+            this.label3.TabIndex = 4;
+            this.label3.Text = " Url Imagen";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // txt_idarticulo
+            // 
+            this.txt_idarticulo.Location = new System.Drawing.Point(245, 57);
+            this.txt_idarticulo.Name = "txt_idarticulo";
+            this.txt_idarticulo.Size = new System.Drawing.Size(100, 30);
+            this.txt_idarticulo.TabIndex = 5;
+            // 
+            // txt_imagen
+            // 
+            this.txt_imagen.Location = new System.Drawing.Point(245, 178);
+            this.txt_imagen.Name = "txt_imagen";
+            this.txt_imagen.Size = new System.Drawing.Size(100, 30);
+            this.txt_imagen.TabIndex = 7;
+            // 
+            // txt_nombrearticulo
+            // 
+            this.txt_nombrearticulo.Location = new System.Drawing.Point(245, 120);
+            this.txt_nombrearticulo.Name = "txt_nombrearticulo";
+            this.txt_nombrearticulo.Size = new System.Drawing.Size(100, 30);
+            this.txt_nombrearticulo.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(111, 120);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 18);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "nombre articulo";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // F_agregar_i
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.txt_nombrearticulo);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txt_imagen);
+            this.Controls.Add(this.txt_idarticulo);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.b_acep_ai);
             this.Controls.Add(this.b_cancel_ai);
             this.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(600, 500);
             this.MinimumSize = new System.Drawing.Size(600, 500);
             this.Name = "F_agregar_i";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Imagen";
+            this.Load += new System.EventHandler(this.F_agregar_i_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -95,5 +166,11 @@ namespace tp2_grupal
 
         private System.Windows.Forms.Button b_cancel_ai;
         private System.Windows.Forms.Button b_acep_ai;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_idarticulo;
+        private System.Windows.Forms.TextBox txt_imagen;
+        private System.Windows.Forms.TextBox txt_nombrearticulo;
+        private System.Windows.Forms.Label label2;
     }
 }
