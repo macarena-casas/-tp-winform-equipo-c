@@ -94,8 +94,14 @@ namespace tp2_grupal
                     tb_codigoa.Text = articulos.codigo_a;
                     tb_precioa.Text = articulos.precio_a.ToString();
                     r_detalle_a.Text = articulos.descripcion_a;
+             
                     cb_categorias_a.SelectedValue = articulos.categoria_a.codigo_categoria;
+                    if (cb_categorias_a.SelectedValue == null)
+                    {
+                        cb_categorias_a.ValueMember = "codigo_categoria";
+                    }
                     cb_marcas_a.SelectedValue = articulos.marca_a.Codigo;
+
                 }
 
             }

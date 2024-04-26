@@ -74,14 +74,12 @@ namespace tp2_grupal
             Acceso_Datos datos = new Acceso_Datos();
             try
             {
-                
-                ima.id_articulo = int.Parse(txt_idarticulo.Text);
+
+                ima.id_articulo =int.Parse(txt_idarticulo.Text);
                 ima.Nombre_imagen = txt_imagen.Text;
-                ima.nombre_articulo = txt_nombrearticulo.Text;
-                
+            
                 negocio.agregar(ima);
 
-                Lista_imagen.Add(ima);
                 MessageBox.Show("agregado exitosamente");
                 Close();
             }
@@ -99,6 +97,11 @@ namespace tp2_grupal
         }
 
         private void F_agregar_i_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txt_idarticulo_TextChanged(object sender, EventArgs e)
         {
 
         }

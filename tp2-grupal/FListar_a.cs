@@ -61,13 +61,13 @@ namespace tp2_grupal
          {
             try
             {
+              
+                pbx_articulos.Load(imagen);
 
-             pbx_articulos.Load(imagen);
             }
             catch (Exception ex)
             {
-
-                pbx_articulos.Load("https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg");
+               pbx_articulos.Load("https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg");
             }
         }
 

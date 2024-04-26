@@ -25,16 +25,20 @@ namespace tp2_grupal
 
         private void F_listar_i_Load(object sender, EventArgs e)
         {
-            imagen_negocio negocio = new imagen_negocio();
+            cargar();
+
+        }
+        private void cargar()
+        {
+imagen_negocio negocio = new imagen_negocio();
             imagens = negocio.Listar();
             dgv_listar.DataSource = imagens;
             pbx_imagen.Load(imagens[0].Nombre_imagen);
-
         }
  private void dgv_listar_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           Imagen selec = (Imagen)dgv_listar.CurrentRow.DataBoundItem;
-            pbx_imagen.Load(selec.Nombre_imagen);
+        //   Imagen selec = (Imagen)dgv_listar.CurrentRow.DataBoundItem;
+           // pbx_imagen.Load(selec.Nombre_imagen);
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -77,20 +81,23 @@ namespace tp2_grupal
 
         private void dgv_listar_SelectionChanged(object sender, EventArgs e)
         {
-            Imagen seleccionado;
-            seleccionado = (Imagen)dgv_listar.CurrentRow.DataBoundItem;
+            Imagen seleccionado = (Imagen)dgv_listar.CurrentRow.DataBoundItem;
+            cargarimagen(seleccionado.Nombre_imagen);
 
+        }
+            private void cargarimagen(string imagen)
+            { 
             try
             {
-              pbx_imagen.Load(seleccionado.Nombre_imagen);
+              pbx_imagen.Load(imagen);
             }
             catch (Exception ex)
             {
-
                 pbx_imagen.Load("https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg");
 
             }
+            }
 
-        }   
+           
     }
 }

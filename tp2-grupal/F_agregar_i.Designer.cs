@@ -84,7 +84,7 @@ namespace tp2_grupal
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(152, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 18);
+            this.label1.Size = new System.Drawing.Size(151, 32);
             this.label1.TabIndex = 2;
             this.label1.Text = "Id Articulo";
             // 
@@ -95,7 +95,7 @@ namespace tp2_grupal
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(133, 178);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 18);
+            this.label3.Size = new System.Drawing.Size(168, 32);
             this.label3.TabIndex = 4;
             this.label3.Text = " Url Imagen";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -104,21 +104,22 @@ namespace tp2_grupal
             // 
             this.txt_idarticulo.Location = new System.Drawing.Point(245, 57);
             this.txt_idarticulo.Name = "txt_idarticulo";
-            this.txt_idarticulo.Size = new System.Drawing.Size(100, 30);
+            this.txt_idarticulo.Size = new System.Drawing.Size(100, 47);
             this.txt_idarticulo.TabIndex = 5;
+            this.txt_idarticulo.TextChanged += new System.EventHandler(this.txt_idarticulo_TextChanged);
             // 
             // txt_imagen
             // 
             this.txt_imagen.Location = new System.Drawing.Point(245, 178);
             this.txt_imagen.Name = "txt_imagen";
-            this.txt_imagen.Size = new System.Drawing.Size(100, 30);
+            this.txt_imagen.Size = new System.Drawing.Size(100, 47);
             this.txt_imagen.TabIndex = 7;
             // 
             // txt_nombrearticulo
             // 
             this.txt_nombrearticulo.Location = new System.Drawing.Point(245, 120);
             this.txt_nombrearticulo.Name = "txt_nombrearticulo";
-            this.txt_nombrearticulo.Size = new System.Drawing.Size(100, 30);
+            this.txt_nombrearticulo.Size = new System.Drawing.Size(100, 47);
             this.txt_nombrearticulo.TabIndex = 9;
             // 
             // label2
@@ -128,17 +129,17 @@ namespace tp2_grupal
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(111, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 18);
+            this.label2.Size = new System.Drawing.Size(226, 32);
             this.label2.TabIndex = 8;
             this.label2.Text = "nombre articulo";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // F_agregar_i
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.ClientSize = new System.Drawing.Size(576, 436);
             this.Controls.Add(this.txt_nombrearticulo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_imagen);

@@ -30,18 +30,26 @@ namespace negocio
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Descripcion"];
                     aux.Id_a = (int)datos.lector["Id"];
-                    aux.imagen_a= new Imagen ();
-                    if(!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ImagenUrl")) ))
-                    aux.imagen_a.Nombre_imagen = (string)datos.lector["ImagenUrl"];
-                    aux.categoria_a = new Categoria();
-                    if(!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria")) ))
-                    aux.categoria_a.nombre_categoria = (string)datos.lector["Categoria"];
-                    aux.categoria_a.codigo_categoria = (int)datos.lector["IdCategoria"];
-                    aux.marca_a = new Marca();
-                   if(!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Marca")) ))
-                    aux.marca_a.Nombre = (string)datos.lector["Marca"];
-                    aux.marca_a.Codigo = (int)datos.lector["IdMarca"];
-                    
+                        aux.imagen_a = new Imagen();
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ImagenUrl"))))
+                    {
+                        aux.imagen_a.Nombre_imagen = (string)datos.lector["ImagenUrl"];
+             
+                    }
+
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
+                    {
+                        aux.categoria_a = new Categoria();
+                        aux.categoria_a.nombre_categoria = (string)datos.lector["Categoria"];
+                        aux.categoria_a.codigo_categoria = (int)datos.lector["IdCategoria"];
+
+                    }
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Marca"))))
+                    {
+                        aux.marca_a = new Marca();
+                        aux.marca_a.Nombre = (string)datos.lector["Marca"];
+                        aux.marca_a.Codigo = (int)datos.lector["IdMarca"];
+                    }
                     
                     lista.Add(aux);
 
