@@ -33,7 +33,7 @@ namespace tp2_grupal
 imagen_negocio negocio = new imagen_negocio();
             imagens = negocio.Listar();
             dgv_listar.DataSource = imagens;
-            pbx_imagen.Load(imagens[0].Nombre_imagen);
+            pbx_imagen.Load(imagens[1].Nombre_imagen);
         }
  private void dgv_listar_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -56,7 +56,7 @@ imagen_negocio negocio = new imagen_negocio();
             Imagen seleccionado;
             try
             {
-                DialogResult respuesta = MessageBox.Show("se eliminara la imagen seleccionada, ¿continuar?", "ELIMINAR MARCA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult respuesta = MessageBox.Show("se eliminara la marca seleccionada, ¿continuar?", "ELIMINAR MARCA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                 if (respuesta == DialogResult.Yes)
                 {

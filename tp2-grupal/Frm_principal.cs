@@ -74,5 +74,29 @@ namespace tp2_grupal
         {
 
         }
+
+        private void btn_listados_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(F_Listar_M))
+                    return;
+            }
+            frm_agruparpormarca flistar = new frm_agruparpormarca();
+            flistar.Show();
+        }
+
+        private void btn_Busqueda_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(frmbusqueda))
+                    return;
+            }
+            frmbusqueda fbusqueda = new frmbusqueda();
+            fbusqueda.Show();
+
+            
+        }
     }
 }

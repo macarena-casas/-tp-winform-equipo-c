@@ -61,5 +61,15 @@ namespace tp2_grupal
             F_Listar_M FListar = new F_Listar_M();
             FListar.Show();
         }
+
+        private void btn_filtrar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Frm_marcas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -70,6 +70,7 @@ namespace negocio
             }
         }
 
+
         public void agregar(Articulos nuevo)
         {
             Acceso_Datos datos = new Acceso_Datos();
@@ -100,6 +101,245 @@ namespace negocio
             {
                 datos.cerrarconexion();
             }
+
+        }
+        public List<Articulos> listarco(string cod)
+        {
+            List<Articulos> lista = new List<Articulos>();
+            Acceso_Datos datos = new Acceso_Datos();
+            try
+            {
+                datos.setearconsulta("select Codigo, A.Id , A.Nombre,A.Precio, A.Descripcion Detalle, M.Descripcion Marca, A.IdMarca idMarca, I.ImagenUrl, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I where A.Codigo = @Cod AND M.Id = A.IdMarca AND C.Id = A.IdCategoria AND I.IdArticulo = A.Id");
+                datos.setearparametro("@Cod", cod);
+                datos.ejecutarlectura();
+                while (datos.lector.Read())
+                {
+                    Articulos aux = new Articulos();
+                    aux.nombre_a = (string)datos.lector["Nombre"];
+                    aux.precio_a = (decimal)datos.lector["Precio"];
+                    aux.codigo_a = (string)datos.lector["Codigo"];
+                    aux.descripcion_a = (string)datos.lector["Detalle"];
+                    aux.Id_a = (int)datos.lector["Id"];
+                    aux.imagen_a = new Imagen();
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ImagenUrl"))))
+                    {
+                        aux.imagen_a.Nombre_imagen = (string)datos.lector["ImagenUrl"];
+
+                    }
+
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
+                    {
+                        aux.categoria_a = new Categoria();
+                        aux.categoria_a.nombre_categoria = (string)datos.lector["Categoria"];
+                        aux.categoria_a.codigo_categoria = (int)datos.lector["IdCategoria"];
+
+                    }
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Marca"))))
+                    {
+                        aux.marca_a = new Marca();
+                        aux.marca_a.Nombre = (string)datos.lector["Marca"];
+                        aux.marca_a.Codigo = (int)datos.lector["IdMarca"];
+                    }
+                    lista.Add(aux);
+
+                }
+                return lista;
+
+            }
+            catch (Exception ex)
+            {
+
+                return null;
+
+            }
+            finally { datos.cerrarconexion(); }
+        }
+        public List<Articulos> listarid(string id)
+        {
+            List<Articulos> lista = new List<Articulos>();
+            Acceso_Datos datos = new Acceso_Datos();
+            try
+            {
+                datos.setearconsulta("select Codigo, A.Id , A.Nombre,A.Precio, A.Descripcion Detalle, M.Descripcion Marca, A.IdMarca idMarca, I.ImagenUrl, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I where A.Id=@Id AND M.Id = A.IdMarca AND C.Id = A.IdCategoria AND I.IdArticulo = A.Id");
+                datos.setearparametro("@Id", id);
+                datos.ejecutarlectura();
+                while (datos.lector.Read())
+                {
+                    Articulos aux = new Articulos();
+                    aux.nombre_a = (string)datos.lector["Nombre"];
+                    aux.precio_a = (decimal)datos.lector["Precio"];
+                    aux.codigo_a = (string)datos.lector["Codigo"];
+                    aux.descripcion_a = (string)datos.lector["Detalle"];
+                    aux.Id_a = (int)datos.lector["Id"];
+                    aux.imagen_a = new Imagen();
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ImagenUrl"))))
+                    {
+                        aux.imagen_a.Nombre_imagen = (string)datos.lector["ImagenUrl"];
+
+                    }
+
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
+                    {
+                        aux.categoria_a = new Categoria();
+                        aux.categoria_a.nombre_categoria = (string)datos.lector["Categoria"];
+                        aux.categoria_a.codigo_categoria = (int)datos.lector["IdCategoria"];
+
+                    }
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Marca"))))
+                    {
+                        aux.marca_a = new Marca();
+                        aux.marca_a.Nombre = (string)datos.lector["Marca"];
+                        aux.marca_a.Codigo = (int)datos.lector["IdMarca"];
+                    }
+                    lista.Add(aux);
+
+                }
+                return lista;
+
+            }
+            catch (Exception ex)
+            {
+
+                return null;
+
+            }
+            finally { datos.cerrarconexion(); }
+        }
+        public List<Articulos> listarno(string nom)
+        {
+            List<Articulos> lista = new List<Articulos>();
+            Acceso_Datos datos = new Acceso_Datos();
+            try
+            {
+                datos.setearconsulta("select Codigo, A.Id , A.Nombre, A.Precio, A.Descripcion Detalle, M.Descripcion Marca, A.IdMarca idMarca, I.ImagenUrl, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I where A.Nombre = @nombre AND M.Id = A.IdMarca AND C.Id = A.IdCategoria AND I.IdArticulo = A.Id");
+                datos.setearparametro("@nombre", nom);
+                datos.ejecutarlectura();
+                while (datos.lector.Read())
+                {
+                    Articulos aux = new Articulos();
+                    aux.nombre_a = (string)datos.lector["Nombre"];
+                    aux.precio_a = (decimal)datos.lector["Precio"];
+                    aux.codigo_a = (string)datos.lector["Codigo"];
+                    aux.descripcion_a = (string)datos.lector["Detalle"];
+                    aux.Id_a = (int)datos.lector["Id"];
+                    aux.imagen_a = new Imagen();
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ImagenUrl"))))
+                    {
+                        aux.imagen_a.Nombre_imagen = (string)datos.lector["ImagenUrl"];
+
+                    }
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
+                    {
+                        aux.categoria_a = new Categoria();
+                        aux.categoria_a.nombre_categoria = (string)datos.lector["Categoria"];
+                        aux.categoria_a.codigo_categoria = (int)datos.lector["IdCategoria"];
+
+                    }
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Marca"))))
+                    {
+                        aux.marca_a = new Marca();
+                        aux.marca_a.Nombre = (string)datos.lector["Marca"];
+                        aux.marca_a.Codigo = (int)datos.lector["IdMarca"];
+                    }
+                    lista.Add(aux);
+
+                }
+                return lista;
+
+            }
+            catch (Exception ex)
+            {
+
+                return null;
+
+            }
+            finally { datos.cerrarconexion(); }
+        }
+        public List<Articulos> listar(Marca id)
+        {
+            List<Articulos> lista = new List<Articulos>();
+            Acceso_Datos datos = new Acceso_Datos();
+            try
+            {
+                datos.setearconsulta("select Codigo, Nombre, Precio, A.Id, A.Descripcion, M.Descripcion Marca, A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C where A.IdMarca = @Id AND C.Id = A.IdCategoria AND m.Id = @Id");
+                datos.setearparametro("@Id", id.Codigo);
+                datos.ejecutarlectura();
+                while (datos.lector.Read())
+                {
+                    Articulos aux = new Articulos();
+                    aux.nombre_a = (string)datos.lector["Nombre"];
+                    aux.precio_a = (decimal)datos.lector["Precio"];
+                    aux.codigo_a = (string)datos.lector["Codigo"];
+                    aux.descripcion_a = (string)datos.lector["Descripcion"];
+                    aux.Id_a = (int)datos.lector["Id"];
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
+                    {
+                        aux.categoria_a = new Categoria();
+                        aux.categoria_a.nombre_categoria = (string)datos.lector["Categoria"];
+                        aux.categoria_a.codigo_categoria = (int)datos.lector["IdCategoria"];
+
+                    }
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Marca"))))
+                    {
+                        aux.marca_a = new Marca();
+                        aux.marca_a.Nombre = (string)datos.lector["Marca"];
+                        aux.marca_a.Codigo = (int)datos.lector["IdMarca"];
+                    }
+                    lista.Add(aux);
+
+                }
+                return lista;
+                
+             }
+            catch (Exception ex)
+            {
+
+                throw ex;
+
+            }
+            finally { datos.cerrarconexion(); }
+        }
+        public List<Articulos> listarcategoria(Categoria id)
+        {
+            List<Articulos> lista = new List<Articulos>();
+            Acceso_Datos datos = new Acceso_Datos();
+            try
+            {
+                datos.setearconsulta("select Codigo, A.Id, A.Descripcion, M.Descripcion Marca, A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C where A.IdCategoria = @Id AND M.Id = A.IdMarca AND C.Id = @Id");
+                datos.setearparametro("@Id", id.codigo_categoria);
+                datos.ejecutarlectura();
+                while (datos.lector.Read())
+                {
+                    Articulos aux = new Articulos();
+                    aux.codigo_a = (string)datos.lector["Codigo"];
+                    aux.descripcion_a = (string)datos.lector["Descripcion"];
+                    aux.Id_a = (int)datos.lector["Id"];
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
+                    {
+                        aux.categoria_a = new Categoria();
+                        aux.categoria_a.nombre_categoria = (string)datos.lector["Categoria"];
+                        aux.categoria_a.codigo_categoria = (int)datos.lector["IdCategoria"];
+
+                    }
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Marca"))))
+                    {
+                        aux.marca_a = new Marca();
+                        aux.marca_a.Nombre = (string)datos.lector["Marca"];
+                        aux.marca_a.Codigo = (int)datos.lector["IdMarca"];
+                    }
+                    lista.Add(aux);
+
+                }
+                return lista;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+
+            }
+            finally { datos.cerrarconexion(); }
 
         }
         public void modificar (Articulos articulo)

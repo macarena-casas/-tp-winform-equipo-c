@@ -56,7 +56,6 @@ namespace tp2_grupal
                 articulos.categoria_a = (Categoria)cb_categorias_a.SelectedItem;
                 articulos.descripcion_a = r_detalle_a.Text;
                 articulos.precio_a = decimal.Parse(tb_precioa.Text) ;
-                //articulos.imagen_a =(Imagen)(tb_url_a.Text);
                 if (articulos.Id_a!= 0)
                 { negocio.modificar(articulos);
                     MessageBox.Show("Modificado con Exito");
@@ -94,7 +93,6 @@ namespace tp2_grupal
                     tb_nombrea.Text = articulos.nombre_a;
                     tb_codigoa.Text = articulos.codigo_a;
                     tb_precioa.Text = articulos.precio_a.ToString();
-                    tb_url_a.Text = articulos.imagen_a.Nombre_imagen;
                     r_detalle_a.Text = articulos.descripcion_a;
              
                     cb_categorias_a.SelectedValue = articulos.categoria_a.codigo_categoria;
@@ -114,28 +112,10 @@ namespace tp2_grupal
             }
          
         }
-        
-        private void cargarImagen(string imagen)
-        {
-            try
-            {
 
-                pb_articulo.Load(imagen);
-
-            }
-            catch (Exception ex)
-            {
-                pb_articulo.Load("https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg");
-            }
-        }
-        private void tb_url_a_TextChanged(object sender, EventArgs e)
+        private void cb_marcas_a_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void tb_url_a_Leave(object sender, EventArgs e)
-        {
-            cargarImagen(tb_url_a.Text);
         }
     }
 }

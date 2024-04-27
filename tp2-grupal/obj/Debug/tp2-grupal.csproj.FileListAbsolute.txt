@@ -62,3 +62,6 @@ C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\activi
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.CopyComplete
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.exe
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.pdb
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Form1.resources
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.frmbusqueda.resources
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.frm_agruparpormarca.resources

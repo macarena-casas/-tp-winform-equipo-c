@@ -18,7 +18,7 @@ namespace negocio
             try
             {
       
-                datos.setearconsulta("select Id, DESCRIPCION from CATEGORIAS");
+                datos.setearconsulta("select Id, Descripcion from CATEGORIAS");
                 datos.ejecutarlectura();
                 while (datos.lector.Read())
                 {
@@ -83,6 +83,7 @@ namespace negocio
                 throw ex;
             }
         }
+        
         public void Eliminar (int Id)
         {
                 Acceso_Datos datos = new Acceso_Datos();

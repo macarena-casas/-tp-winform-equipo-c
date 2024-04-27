@@ -43,10 +43,6 @@ namespace tp2_grupal
             this.tb_precioa = new System.Windows.Forms.TextBox();
             this.tb_codigoa = new System.Windows.Forms.TextBox();
             this.l_codigoa = new System.Windows.Forms.Label();
-            this.tb_url_a = new System.Windows.Forms.TextBox();
-            this.l_url_A = new System.Windows.Forms.Label();
-            this.pb_articulo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_articulo)).BeginInit();
             this.SuspendLayout();
             // 
             // l_nom_art
@@ -54,7 +50,7 @@ namespace tp2_grupal
             this.l_nom_art.AutoSize = true;
             this.l_nom_art.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_nom_art.ForeColor = System.Drawing.Color.White;
-            this.l_nom_art.Location = new System.Drawing.Point(20, 19);
+            this.l_nom_art.Location = new System.Drawing.Point(34, 10);
             this.l_nom_art.MaximumSize = new System.Drawing.Size(288, 33);
             this.l_nom_art.MinimumSize = new System.Drawing.Size(288, 33);
             this.l_nom_art.Name = "l_nom_art";
@@ -67,7 +63,7 @@ namespace tp2_grupal
             // 
             this.tb_nombrea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.tb_nombrea.Font = new System.Drawing.Font("Arial", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_nombrea.Location = new System.Drawing.Point(221, 19);
+            this.tb_nombrea.Location = new System.Drawing.Point(226, 6);
             this.tb_nombrea.Name = "tb_nombrea";
             this.tb_nombrea.Size = new System.Drawing.Size(223, 34);
             this.tb_nombrea.TabIndex = 0;
@@ -78,7 +74,7 @@ namespace tp2_grupal
             this.l_marca_a.AutoSize = true;
             this.l_marca_a.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_marca_a.ForeColor = System.Drawing.SystemColors.Control;
-            this.l_marca_a.Location = new System.Drawing.Point(110, 111);
+            this.l_marca_a.Location = new System.Drawing.Point(129, 101);
             this.l_marca_a.MaximumSize = new System.Drawing.Size(105, 33);
             this.l_marca_a.MinimumSize = new System.Drawing.Size(105, 33);
             this.l_marca_a.Name = "l_marca_a";
@@ -91,7 +87,7 @@ namespace tp2_grupal
             this.lcate_a.AutoSize = true;
             this.lcate_a.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lcate_a.ForeColor = System.Drawing.Color.White;
-            this.lcate_a.Location = new System.Drawing.Point(63, 160);
+            this.lcate_a.Location = new System.Drawing.Point(90, 150);
             this.lcate_a.MaximumSize = new System.Drawing.Size(168, 33);
             this.lcate_a.MinimumSize = new System.Drawing.Size(168, 33);
             this.lcate_a.Name = "lcate_a";
@@ -104,7 +100,7 @@ namespace tp2_grupal
             this.ldetalle_a.AutoSize = true;
             this.ldetalle_a.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ldetalle_a.ForeColor = System.Drawing.SystemColors.Control;
-            this.ldetalle_a.Location = new System.Drawing.Point(46, 327);
+            this.ldetalle_a.Location = new System.Drawing.Point(50, 247);
             this.ldetalle_a.MaximumSize = new System.Drawing.Size(132, 33);
             this.ldetalle_a.MinimumSize = new System.Drawing.Size(132, 33);
             this.ldetalle_a.Name = "ldetalle_a";
@@ -117,7 +113,7 @@ namespace tp2_grupal
             this.r_detalle_a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.r_detalle_a.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.r_detalle_a.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r_detalle_a.Location = new System.Drawing.Point(193, 327);
+            this.r_detalle_a.Location = new System.Drawing.Point(161, 245);
             this.r_detalle_a.MaximumSize = new System.Drawing.Size(288, 156);
             this.r_detalle_a.MinimumSize = new System.Drawing.Size(288, 156);
             this.r_detalle_a.Name = "r_detalle_a";
@@ -135,11 +131,11 @@ namespace tp2_grupal
             this.A_agregar_A.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.A_agregar_A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A_agregar_A.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A_agregar_A.Location = new System.Drawing.Point(193, 506);
+            this.A_agregar_A.Location = new System.Drawing.Point(176, 407);
             this.A_agregar_A.Name = "A_agregar_A";
             this.A_agregar_A.Size = new System.Drawing.Size(94, 37);
             this.A_agregar_A.TabIndex = 6;
-            this.A_agregar_A.Text = "&Agregar";
+            this.A_agregar_A.Text = "Aceptar";
             this.A_agregar_A.UseVisualStyleBackColor = false;
             this.A_agregar_A.Click += new System.EventHandler(this.A_agregar_A_Click);
             // 
@@ -153,7 +149,7 @@ namespace tp2_grupal
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(372, 506);
+            this.button2.Location = new System.Drawing.Point(308, 407);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 37);
             this.button2.TabIndex = 7;
@@ -168,10 +164,11 @@ namespace tp2_grupal
             this.cb_marcas_a.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_marcas_a.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_marcas_a.FormattingEnabled = true;
-            this.cb_marcas_a.Location = new System.Drawing.Point(221, 106);
+            this.cb_marcas_a.Location = new System.Drawing.Point(227, 96);
             this.cb_marcas_a.Name = "cb_marcas_a";
             this.cb_marcas_a.Size = new System.Drawing.Size(222, 38);
             this.cb_marcas_a.TabIndex = 2;
+            this.cb_marcas_a.SelectedIndexChanged += new System.EventHandler(this.cb_marcas_a_SelectedIndexChanged);
             // 
             // cb_categorias_a
             // 
@@ -179,7 +176,7 @@ namespace tp2_grupal
             this.cb_categorias_a.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_categorias_a.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_categorias_a.FormattingEnabled = true;
-            this.cb_categorias_a.Location = new System.Drawing.Point(220, 160);
+            this.cb_categorias_a.Location = new System.Drawing.Point(226, 147);
             this.cb_categorias_a.Name = "cb_categorias_a";
             this.cb_categorias_a.Size = new System.Drawing.Size(223, 38);
             this.cb_categorias_a.TabIndex = 3;
@@ -189,7 +186,7 @@ namespace tp2_grupal
             this.l_precioa.AutoSize = true;
             this.l_precioa.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_precioa.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.l_precioa.Location = new System.Drawing.Point(99, 213);
+            this.l_precioa.Location = new System.Drawing.Point(125, 202);
             this.l_precioa.Name = "l_precioa";
             this.l_precioa.Size = new System.Drawing.Size(109, 32);
             this.l_precioa.TabIndex = 10;
@@ -199,7 +196,7 @@ namespace tp2_grupal
             // 
             this.tb_precioa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.tb_precioa.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_precioa.Location = new System.Drawing.Point(220, 213);
+            this.tb_precioa.Location = new System.Drawing.Point(227, 202);
             this.tb_precioa.Name = "tb_precioa";
             this.tb_precioa.Size = new System.Drawing.Size(223, 37);
             this.tb_precioa.TabIndex = 4;
@@ -208,7 +205,7 @@ namespace tp2_grupal
             // 
             this.tb_codigoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.tb_codigoa.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_codigoa.Location = new System.Drawing.Point(221, 59);
+            this.tb_codigoa.Location = new System.Drawing.Point(226, 46);
             this.tb_codigoa.Name = "tb_codigoa";
             this.tb_codigoa.Size = new System.Drawing.Size(223, 37);
             this.tb_codigoa.TabIndex = 1;
@@ -218,52 +215,18 @@ namespace tp2_grupal
             this.l_codigoa.AutoSize = true;
             this.l_codigoa.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_codigoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.l_codigoa.Location = new System.Drawing.Point(20, 64);
+            this.l_codigoa.Location = new System.Drawing.Point(34, 51);
             this.l_codigoa.Name = "l_codigoa";
             this.l_codigoa.Size = new System.Drawing.Size(280, 32);
             this.l_codigoa.TabIndex = 13;
             this.l_codigoa.Text = "Codigo del Articulo:";
-            // 
-            // tb_url_a
-            // 
-            this.tb_url_a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.tb_url_a.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_url_a.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_url_a.Location = new System.Drawing.Point(221, 275);
-            this.tb_url_a.Name = "tb_url_a";
-            this.tb_url_a.Size = new System.Drawing.Size(222, 37);
-            this.tb_url_a.TabIndex = 14;
-            this.tb_url_a.TextChanged += new System.EventHandler(this.tb_url_a_TextChanged);
-            this.tb_url_a.Leave += new System.EventHandler(this.tb_url_a_Leave);
-            // 
-            // l_url_A
-            // 
-            this.l_url_A.AutoSize = true;
-            this.l_url_A.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_url_A.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.l_url_A.Location = new System.Drawing.Point(20, 275);
-            this.l_url_A.Name = "l_url_A";
-            this.l_url_A.Size = new System.Drawing.Size(188, 32);
-            this.l_url_A.TabIndex = 15;
-            this.l_url_A.Text = "URL Imagen:";
-            // 
-            // pb_articulo
-            // 
-            this.pb_articulo.Location = new System.Drawing.Point(493, 40);
-            this.pb_articulo.Name = "pb_articulo";
-            this.pb_articulo.Size = new System.Drawing.Size(230, 272);
-            this.pb_articulo.TabIndex = 16;
-            this.pb_articulo.TabStop = false;
             // 
             // FAgregar_a
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(776, 536);
-            this.Controls.Add(this.pb_articulo);
-            this.Controls.Add(this.l_url_A);
-            this.Controls.Add(this.tb_url_a);
+            this.ClientSize = new System.Drawing.Size(576, 436);
             this.Controls.Add(this.l_codigoa);
             this.Controls.Add(this.tb_codigoa);
             this.Controls.Add(this.tb_precioa);
@@ -282,13 +245,12 @@ namespace tp2_grupal
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(800, 600);
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.MaximumSize = new System.Drawing.Size(600, 500);
+            this.MinimumSize = new System.Drawing.Size(600, 500);
             this.Name = "FAgregar_a";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Articulo";
             this.Load += new System.EventHandler(this.FAgregar_a_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_articulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,8 +271,5 @@ namespace tp2_grupal
         private System.Windows.Forms.TextBox tb_precioa;
         private System.Windows.Forms.TextBox tb_codigoa;
         private System.Windows.Forms.Label l_codigoa;
-        private System.Windows.Forms.TextBox tb_url_a;
-        private System.Windows.Forms.Label l_url_A;
-        private System.Windows.Forms.PictureBox pb_articulo;
     }
 }
