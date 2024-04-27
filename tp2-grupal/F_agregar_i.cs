@@ -66,12 +66,11 @@ namespace tp2_grupal
         ///------------------------- nuevo agregar--------------------
         private void b_acep_ai_Click(object sender, EventArgs e)
         {
-            List<Imagen> Lista_imagen = new List<Imagen>();
+          
             Imagen ima = new Imagen();
-            Articulos auxi = new Articulos();
+            
             imagen_negocio negocio = new imagen_negocio();
-            ArticulosNegocio negocioarticulo = new ArticulosNegocio();
-            Acceso_Datos datos = new Acceso_Datos();
+           
             try
             {
 

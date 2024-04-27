@@ -40,7 +40,7 @@ namespace tp2_grupal
 
             lista_articulos = negocio.listar();
             dgv_articulos.DataSource = lista_articulos;
-            dgv_articulos.Columns["Id_a"].Visible = false;
+            
             dgv_articulos.Columns["imagen_a"].Visible = false;
             cargarImagen(lista_articulos[0].imagen_a.Nombre_imagen);
             }

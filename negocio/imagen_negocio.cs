@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using dominio;
 
-
+/// <summary>
+/// acceso.ejecutarScalar()
+///executescalar
+///int idArticulo = Convert.ToInt32(acceso.ejecutarScalar());
+/// </summary>
 
 namespace negocio
 {
@@ -18,9 +22,9 @@ namespace negocio
        //no se usaba y lo comente chequear
         public void eliminar(int id)
         {
+                Acceso_Datos datos = new Acceso_Datos();
             try
             {
-                Acceso_Datos datos = new Acceso_Datos();
                 datos.setearconsulta("DELETE FROM IMAGENES WHERE Id = @Id");
                 datos.setearparametro("@Id", id);
                 datos.ejecutaraccion();
@@ -41,17 +45,17 @@ namespace negocio
             {
                 datos.setearconsulta("insert into IMAGENES(IdArticulo, ImagenUrl) values(@IdA, @Imagen)");
                 datos.setearparametro("@IdA", nuevo.id_articulo);
-               datos.setearparametro("@Imagen", nuevo.Nombre_imagen);
+                datos.setearparametro("@Imagen", nuevo.Nombre_imagen);
                 datos.ejecutaraccion();
                // datos.setearconsulta("insert into IMAGENES(IdArticulo, ImagenUrl) values(" + nuevo.id_articulo + ",'"+ nuevo.Nombre_imagen + "')");
                // datos.setearconsulta("select Nombres from ARTICULOS WHERE Id = @Id");
                 //datos.setearconsulta("insert into ARTICULOS(Nombre,Id)values ('" + nuevo.nombre_articulo + "','Id = @Id')");
                //cambie la consulta y seteo de paraetros
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
             finally
             {

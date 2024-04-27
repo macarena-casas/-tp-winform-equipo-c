@@ -56,7 +56,7 @@ imagen_negocio negocio = new imagen_negocio();
             Imagen seleccionado;
             try
             {
-                DialogResult respuesta = MessageBox.Show("se eliminara la marca seleccionada, ¿continuar?", "ELIMINAR MARCA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult respuesta = MessageBox.Show("se eliminara la imagen seleccionada, ¿continuar?", "ELIMINAR MARCA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                 if (respuesta == DialogResult.Yes)
                 {

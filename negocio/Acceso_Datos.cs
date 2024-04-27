@@ -68,6 +68,26 @@ namespace negocio
                 throw ex;
             }
         }
+        public int ejecutaraccion2()
+        { 
+            comando.Connection = conexion;
+            try
+            { 
+                conexion.Open();
+                comando.ExecuteNonQuery();
+                int count=0;//= (int)comando.ExecuteScalar();
+                   
+              return count;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+       
+        
+
         public void cerrarconexion()
         {
             if (lector != null)

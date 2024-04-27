@@ -1,0 +1,18 @@
+C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\negocio\bin\Debug\negocio.dll
+C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\negocio\bin\Debug\negocio.pdb
+C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\negocio\bin\Debug\dominio.dll
+C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\negocio\bin\Debug\dominio.pdb
+C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\negocio\obj\Debug\negocio.dll
+C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\negocio\obj\Debug\negocio.pdb
+C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\negocio\bin\Debug\negocio.dll
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\negocio\bin\Debug\negocio.pdb
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\negocio\bin\Debug\dominio.dll
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\negocio\bin\Debug\dominio.pdb
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\negocio\obj\Debug\negocio.dll
+C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\negocio\obj\Debug\negocio.pdb
