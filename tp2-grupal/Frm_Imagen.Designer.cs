@@ -44,7 +44,7 @@ namespace tp2_grupal
             this.b_agregar_im.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_agregar_im.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_agregar_im.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_agregar_im.Location = new System.Drawing.Point(25, 37);
+            this.b_agregar_im.Location = new System.Drawing.Point(167, 37);
             this.b_agregar_im.Margin = new System.Windows.Forms.Padding(10);
             this.b_agregar_im.Name = "b_agregar_im";
             this.b_agregar_im.Size = new System.Drawing.Size(122, 45);
@@ -82,7 +82,7 @@ namespace tp2_grupal
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(167, 37);
+            this.button4.Location = new System.Drawing.Point(19, 37);
             this.button4.Margin = new System.Windows.Forms.Padding(10);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(122, 45);

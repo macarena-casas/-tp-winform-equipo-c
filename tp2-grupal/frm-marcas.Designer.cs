@@ -44,7 +44,7 @@
             this.b_agregar_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_agregar_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_agregar_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_agregar_m.Location = new System.Drawing.Point(12, 35);
+            this.b_agregar_m.Location = new System.Drawing.Point(309, 35);
             this.b_agregar_m.Name = "b_agregar_m";
             this.b_agregar_m.Size = new System.Drawing.Size(122, 45);
             this.b_agregar_m.TabIndex = 1;
@@ -81,7 +81,7 @@
             this.b_volve_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.b_volve_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_volve_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_volve_m.Location = new System.Drawing.Point(323, 35);
+            this.b_volve_m.Location = new System.Drawing.Point(23, 35);
             this.b_volve_m.Name = "b_volve_m";
             this.b_volve_m.Size = new System.Drawing.Size(122, 45);
             this.b_volve_m.TabIndex = 3;

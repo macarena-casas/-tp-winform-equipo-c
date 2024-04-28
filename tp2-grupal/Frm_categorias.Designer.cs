@@ -64,7 +64,7 @@ namespace tp2_grupal
             this.b_listar_c.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_listar_c.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_listar_c.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_listar_c.Location = new System.Drawing.Point(46, 32);
+            this.b_listar_c.Location = new System.Drawing.Point(312, 32);
             this.b_listar_c.Name = "b_listar_c";
             this.b_listar_c.Size = new System.Drawing.Size(111, 45);
             this.b_listar_c.TabIndex = 2;
@@ -83,7 +83,7 @@ namespace tp2_grupal
             this.b_volver_c.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_volver_c.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_volver_c.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_volver_c.Location = new System.Drawing.Point(307, 32);
+            this.b_volver_c.Location = new System.Drawing.Point(34, 32);
             this.b_volver_c.Name = "b_volver_c";
             this.b_volver_c.Size = new System.Drawing.Size(111, 45);
             this.b_volver_c.TabIndex = 3;
