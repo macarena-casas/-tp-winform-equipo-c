@@ -27,6 +27,7 @@ namespace tp2_grupal
             { 
                 
                 nueva_marca.Nombre = txt_agregarmarca.Text;
+                
                 if (nueva_marca.Nombre!="")
                 {
                     negocio.Agregar(nueva_marca);

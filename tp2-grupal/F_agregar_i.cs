@@ -74,14 +74,18 @@ namespace tp2_grupal
             Acceso_Datos datos = new Acceso_Datos();
             try
             {
-
+                if (ima.id_articulo != 0 && ima.Nombre_imagen != "" && ima.nombre_articulo != "")
+                {
+                  
                 ima.id_articulo =int.Parse(txt_idarticulo.Text);
+
                 ima.Nombre_imagen = txt_imagen.Text;
             
                 negocio.agregar(ima);
-
                 MessageBox.Show("agregado exitosamente");
                 Close();
+                }
+                else { MessageBox.Show("ingrese valores en todos los campos"); }
             }
 
             catch (Exception ex)
