@@ -77,5 +77,10 @@ namespace tp2_grupal
             FListar_a Flisa = new FListar_a();
             Flisa.Show();
         }
+
+        private void FArticulos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

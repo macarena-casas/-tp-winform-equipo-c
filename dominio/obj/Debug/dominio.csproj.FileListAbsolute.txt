@@ -10,3 +10,9 @@ C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\activi
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\dominio\obj\Debug\dominio.dll
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\dominio\obj\Debug\dominio.pdb
+C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\dominio\bin\Debug\dominio.dll
+C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\dominio\bin\Debug\dominio.pdb
+C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\dominio\obj\Debug\dominio.dll
+C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\dominio\obj\Debug\dominio.pdb

@@ -89,6 +89,11 @@
     <Compile Include="FModificar_a.Designer.cs">
       <DependentUpon>FModificar_a.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form1.resx</DependentUpon>
+    </Compile>
     <Compile Include="frmbusqueda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,7 +195,10 @@
     <EmbeddedResource Include="FModificar_a.resx">
       <DependentUpon>FModificar_a.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Form1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm-marcas.resx">
       <DependentUpon>frm-marcas.cs</DependentUpon>
     </EmbeddedResource>
