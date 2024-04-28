@@ -63,7 +63,41 @@ namespace tp2_grupal
              }
          }*/
 
-        ///------------------------- nuevo agregar--------------------
+        ///------------------------- nuevo agregar-------------------- 
+        
+        
+        
+        private bool validarfiltro()
+        {
+            if (txt_idarticulo.Text.ToString() == "IdArticulo")
+            {
+                if (!(solonumeros(txt_idarticulo.Text)))
+                { 
+                    MessageBox.Show("solo numeros por favor...");
+                    return true;
+                   
+
+                        
+                        }
+               
+            } 
+            return false;
+
+        }
+        public bool solonumeros(string cadena)
+        {
+            foreach (char c in cadena)
+            {
+                if (!(char.IsNumber(c))) 
+                {
+                    MessageBox.Show("solo numeros por favor...");
+                    return true;
+                }
+                
+            }
+            return false;
+           
+        }
         private void b_acep_ai_Click(object sender, EventArgs e)
         {
             List<Imagen> Lista_imagen = new List<Imagen>();
@@ -74,17 +108,19 @@ namespace tp2_grupal
             Acceso_Datos datos = new Acceso_Datos();
             try
             {
-                if (ima.id_articulo != 0 && ima.Nombre_imagen != "" && ima.nombre_articulo != "")
+                if ( ima.Nombre_imagen != "" && ima.nombre_articulo != "")
                 {
-                  
-                ima.id_articulo =int.Parse(txt_idarticulo.Text);
 
-                ima.Nombre_imagen = txt_imagen.Text;
+                   if (solonumeros(txt_idarticulo.Text.ToString())) {
+                        return; }
+                ima.id_articulo =int.Parse(txt_idarticulo.Text);
             
+                
+                ima.Nombre_imagen = txt_imagen.Text;           
                 negocio.agregar(ima);
                 MessageBox.Show("agregado exitosamente");
                 Close();
-                }
+               }
                 else { MessageBox.Show("ingrese valores en todos los campos"); }
             }
 
