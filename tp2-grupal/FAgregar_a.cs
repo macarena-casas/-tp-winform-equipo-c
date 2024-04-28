@@ -75,7 +75,20 @@ namespace tp2_grupal
                 MessageBox.Show(ex.ToString());
             }
         }
+        public bool solonumeros(string cadena)
+        {
+            foreach (char c in cadena)
+            {
+                if (!(char.IsNumber(c)))
+                {
+                    MessageBox.Show("solo numeros por favor...");
+                    return true;
+                }
 
+            }
+            return false;
+
+        }
         private void FAgregar_a_Load(object sender, EventArgs e)
         {
             marca_negocio marcanegocio = new marca_negocio();
@@ -92,9 +105,15 @@ namespace tp2_grupal
                 { 
                     tb_nombrea.Text = articulos.nombre_a;
                     tb_codigoa.Text = articulos.codigo_a;
+
+                    if (solonumeros(tb_precioa.Text.ToString()))
+                    {
+                        return;
+                    }
                     tb_precioa.Text = articulos.precio_a.ToString();
+                    
                     r_detalle_a.Text = articulos.descripcion_a;
-             
+                  
                     cb_categorias_a.SelectedValue = articulos.categoria_a.codigo_categoria;
                     if (cb_categorias_a.SelectedValue == null)
                     {
