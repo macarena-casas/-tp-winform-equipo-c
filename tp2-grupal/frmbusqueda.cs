@@ -34,9 +34,10 @@ namespace tp2_grupal
         {
             Articulos articulos = new Articulos();
             ArticulosNegocio negocio = new ArticulosNegocio();
+            
             if (!(solonumeros(txt_buscarid.Text)))
             lista_articulos = negocio.listarid(int.Parse(txt_buscarid.Text));
-
+            
             try
             {
                 if (lista_articulos != null)
@@ -45,8 +46,10 @@ namespace tp2_grupal
                     dgv_busqueda.Columns["imagen_a"].Visible = false;
                     cargarImagen(lista_articulos[0].imagen_a.Nombre_imagen);
                     rtb_Detalles.Text = lista_articulos[0].descripcion_a;
+                    
                 }
-                
+                txt_buscarid.Clear();
+
             }
             catch (Exception ex)
             {
@@ -71,7 +74,8 @@ namespace tp2_grupal
                 cargarImagen(lista_articulos[0].imagen_a.Nombre_imagen);
                 rtb_Detalles.Text = lista_articulos[0].descripcion_a;
                 }
-               
+                txt_buscarco.Clear();
+
             }
             catch (Exception ex)
             {
@@ -94,6 +98,7 @@ namespace tp2_grupal
                     cargarImagen(lista_articulos[0].imagen_a.Nombre_imagen);
                     rtb_Detalles.Text = lista_articulos[0].descripcion_a;
                 }
+                txt_buscarno .Clear();
 
             }
             catch (Exception ex)
@@ -128,7 +133,7 @@ namespace tp2_grupal
 
         private void txt_buscarid_TextChanged(object sender, EventArgs e)
         {
-           
+            
 
         }
         public bool solonumeros(string cadena)

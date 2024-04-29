@@ -74,8 +74,6 @@ C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\bin\Debug\negocio.pdb
 C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2-grupal.csproj.AssemblyReference.cache
 C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_a.resources
 C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_Categoria.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FArticulos.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.Fdetalles_a.resources
 C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FEliminar_a.resources
 C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FListar_a.resources
 C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FModificar_a.resources
@@ -133,3 +131,4 @@ C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.
 C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.exe
 C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.pdb
 C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FArticulos1.resources
+C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FArticulos1.resources
