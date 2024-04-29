@@ -31,6 +31,8 @@ namespace negocio
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Descripcion"];
                     aux.Id_a = (int)datos.lector["Id"];
+                    aux.urlimagen = (string)datos.lector["ImagenUrl"];
+
                         aux.imagen_a = new Imagen();
                     if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ImagenUrl"))))
                     {
@@ -76,21 +78,18 @@ namespace negocio
             Acceso_Datos datos = new Acceso_Datos();
             try
             {
-
-                /// acceso.ejecutarScalar()
-                ///executescalar
-                ///int idArticulo = Convert.ToInt32(acceso.ejecutarScalar());
-              
                datos.setearconsulta("insert into ARTICULOS values ('" + nuevo.codigo_a + "','" + nuevo.nombre_a + "','" + nuevo.descripcion_a+ "', @marca,@categoria , " + nuevo.precio_a + ")");
                datos.setearparametro("@categoria", nuevo.categoria_a.codigo_categoria);
                datos.setearparametro("@marca", nuevo.marca_a.Codigo);
-               int id= datos.ejecutaraccion2();
-               datos.cerrarconexion();
+               datos.ejecutaraccion();
+              
+               datos.setearconsulta("SELECT TOP 1 * FROM ARTICULOS ORDER BY Id DESC");
+               int id = Convert.ToInt32(datos.ejecutarScalar());
+
                datos.setearconsulta("insert into IMAGENES(IdArticulo, ImagenUrl) values(@Id,@url)");
                datos.setearparametro("@Id", id);
-               datos.setearparametro("@url", nuevo.nombre_a);
-          
-                datos.ejecutaraccion();
+               datos.setearparametro("@url", nuevo.urlimagen);
+               datos.ejecutaraccion();
             }
             catch (Exception ex)
             {
@@ -103,6 +102,7 @@ namespace negocio
             }
 
         }
+   
         public List<Articulos> listarco(string cod)
         {
             List<Articulos> lista = new List<Articulos>();
@@ -154,7 +154,7 @@ namespace negocio
             }
             finally { datos.cerrarconexion(); }
         }
-        public List<Articulos> listarid(string id)
+        public List<Articulos> listarid(int id)
         {
             List<Articulos> lista = new List<Articulos>();
             Acceso_Datos datos = new Acceso_Datos();
@@ -305,12 +305,14 @@ namespace negocio
             Acceso_Datos datos = new Acceso_Datos();
             try
             {
-                datos.setearconsulta("select Codigo, A.Id, A.Descripcion, M.Descripcion Marca, A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C where A.IdCategoria = @Id AND M.Id = A.IdMarca AND C.Id = @Id");
+                datos.setearconsulta("select Codigo, A.Id,A.Nombre,A.Precio, A.Descripcion, M.Descripcion Marca, A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C where A.IdCategoria = @Id AND M.Id = A.IdMarca AND C.Id = @Id");
                 datos.setearparametro("@Id", id.codigo_categoria);
                 datos.ejecutarlectura();
                 while (datos.lector.Read())
                 {
                     Articulos aux = new Articulos();
+                    aux.nombre_a = (string)datos.lector["Nombre"];
+                    aux.precio_a = (decimal)datos.lector["Precio"];
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Descripcion"];
                     aux.Id_a = (int)datos.lector["Id"];

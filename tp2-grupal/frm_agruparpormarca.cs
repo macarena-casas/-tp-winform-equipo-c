@@ -58,13 +58,15 @@ namespace tp2_grupal
         {
             Articulos articulos = new Articulos();
             ArticulosNegocio negocio = new ArticulosNegocio();
-            //articulos.marca_a = (Marca)cb_marcas.SelectedItem;
+            
             lista_articulos =negocio.listar((Marca)cb_marcas.SelectedItem);
             try
             {
                 dgv_agruparmarca.DataSource = lista_articulos;
                 dgv_agruparmarca.Columns["Id_a"].Visible = false;
                 dgv_agruparmarca.Columns["imagen_a"].Visible = false;
+                dgv_agruparmarca.Columns["urlimagen"].Visible = false;
+
 
             }
             catch (Exception ex)
@@ -80,12 +82,22 @@ namespace tp2_grupal
             Articulos articulos = new Articulos();
             ArticulosNegocio negocio = new ArticulosNegocio();
             lista_articulos = negocio.listarcategoria((Categoria)cb_categorias.SelectedItem);
+
             try
             {
-                dgv_agruparmarca.DataSource = lista_articulos;
-                dgv_agruparmarca.Columns["Id_a"].Visible = false;
+                if (lista_articulos != null)
+                {
+                    dgv_agruparmarca.DataSource = lista_articulos;
+                    dgv_agruparmarca.Columns["Id_a"].Visible = false;
+                    dgv_agruparmarca.Columns["imagen_a"].Visible = false;
+                    dgv_agruparmarca.Columns["urlimagen"].Visible = false;
+                }
+                else { 
+                    MessageBox.Show("La categoria solicitada no cuenta con ningun articulo");
+                }
 
-              
+
+
 
             }
             catch (Exception ex)

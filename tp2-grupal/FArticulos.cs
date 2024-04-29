@@ -17,16 +17,6 @@ namespace tp2_grupal
             InitializeComponent();
         }
 
-        private void b_Detalles_Click(object sender, EventArgs e)
-        {
-            foreach (var item in Application.OpenForms)
-            {
-                if (item.GetType() == typeof(Fdetalles_a))
-                    return;
-            }
-            Fdetalles_a Fdeta = new Fdetalles_a();
-            Fdeta.Show();
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {

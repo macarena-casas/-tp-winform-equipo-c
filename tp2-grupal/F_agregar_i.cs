@@ -145,5 +145,23 @@ namespace tp2_grupal
         {
 
         }
+
+        private void txt_imagen_Leave(object sender, EventArgs e)
+        {
+            cargarImagen(txt_imagen.Text);
+        }
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+
+                pb_imagen.Load(imagen);
+
+            }
+            catch (Exception ex)
+            {
+                pb_imagen.Load("https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg");
+            }
+        }
     }
 }

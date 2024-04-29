@@ -41,7 +41,6 @@ C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\activi
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_a.resources
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_Categoria.resources
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FArticulos.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Fdetalles_a.resources
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FEliminar_a.resources
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FListar_a.resources
 C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FModificar_a.resources

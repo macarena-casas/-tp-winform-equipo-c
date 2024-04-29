@@ -17,28 +17,48 @@ namespace tp2_grupal
 
         private List<Imagen> imagens;
         public F_listar_i()
+            
         {
             InitializeComponent();
         }
 
-       
+       int indice = 0;
 
         private void F_listar_i_Load(object sender, EventArgs e)
         {
             cargar();
-
+          
         }
+  
+          
+        public void LoadDataToListView(ListView lv_imagen, string connectionString)
+        {         
+            imagen_negocio negocio = new imagen_negocio();
+            imagens = negocio.Listar();
+            ListViewItem item = new ListViewItem(imagens[0].ToString());
+            dgv_listar.DataSource = imagens;
+           /*
+
+             
+                    item.SubItems.Add(imagens[0].ToString());
+               
+                lv_imagen.Items.Add(item);*/
+     
+        }
+
+        
         private void cargar()
         {
-imagen_negocio negocio = new imagen_negocio();
+        imagen_negocio negocio = new imagen_negocio();
             imagens = negocio.Listar();
             dgv_listar.DataSource = imagens;
+            cargarimagen(imagens[0].Nombre_imagen);
+
             pbx_imagen.Load(imagens[1].Nombre_imagen);
         }
- private void dgv_listar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgv_listar_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-        //   Imagen selec = (Imagen)dgv_listar.CurrentRow.DataBoundItem;
-           // pbx_imagen.Load(selec.Nombre_imagen);
+    
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -50,6 +70,7 @@ imagen_negocio negocio = new imagen_negocio();
             Close();
         }
 
+        
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
             imagen_negocio negocio = new imagen_negocio();
@@ -60,33 +81,27 @@ imagen_negocio negocio = new imagen_negocio();
 
                 if (respuesta == DialogResult.Yes)
                 {
-
                     seleccionado = (Imagen)dgv_listar.CurrentRow.DataBoundItem;
                     negocio.eliminar(seleccionado.id_imagen);                                  
                     dgv_listar.DataSource = negocio.Listar();
-                    
                  }
              }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.ToString());
             }
         }
 
         private void pbx_imagen_Click(object sender, EventArgs e)
-        {
-
-        }
-
+         {
+         }
         private void dgv_listar_SelectionChanged(object sender, EventArgs e)
         {
             Imagen seleccionado = (Imagen)dgv_listar.CurrentRow.DataBoundItem;
             cargarimagen(seleccionado.Nombre_imagen);
-
         }
-            private void cargarimagen(string imagen)
-            { 
+        private void cargarimagen(string imagen)
+        { 
             try
             {
               pbx_imagen.Load(imagen);
@@ -94,10 +109,24 @@ imagen_negocio negocio = new imagen_negocio();
             catch (Exception ex)
             {
                 pbx_imagen.Load("https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg");
-
             }
-            }
+         }
 
-           
+        private void lv_imagen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void b_cambiar_Click(object sender, EventArgs e)
+        {
+            indice++;
+
+         cargarimagen(imagens[indice].Nombre_imagen);
+        }
     }
 }

@@ -91,6 +91,8 @@ namespace tp2_grupal
             this.txt_buscarid.Name = "txt_buscarid";
             this.txt_buscarid.Size = new System.Drawing.Size(211, 29);
             this.txt_buscarid.TabIndex = 8;
+            this.txt_buscarid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_buscarid.TextChanged += new System.EventHandler(this.txt_buscarid_TextChanged);
             // 
             // btn_buscarco
             // 
@@ -222,9 +224,9 @@ namespace tp2_grupal
             this.rtb_Detalles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtb_Detalles.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtb_Detalles.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.rtb_Detalles.Location = new System.Drawing.Point(46, 223);
+            this.rtb_Detalles.Location = new System.Drawing.Point(49, 254);
             this.rtb_Detalles.Name = "rtb_Detalles";
-            this.rtb_Detalles.Size = new System.Drawing.Size(427, 154);
+            this.rtb_Detalles.Size = new System.Drawing.Size(424, 123);
             this.rtb_Detalles.TabIndex = 19;
             this.rtb_Detalles.Text = "";
             // 

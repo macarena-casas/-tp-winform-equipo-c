@@ -41,8 +41,9 @@ namespace tp2_grupal
 
             
             dgv_articulos.DataSource = lista_articulos;
-            dgv_articulos.Columns["Id_a"].Visible = false;
             dgv_articulos.Columns["imagen_a"].Visible = false;
+            dgv_articulos.Columns["urlimagen"].Visible = false;
+            dgv_articulos.Columns["descripcion_a"].Visible = false;
             cargarImagen(lista_articulos[0].imagen_a.Nombre_imagen);
             }
             catch (Exception ex)

@@ -34,7 +34,8 @@ namespace tp2_grupal
         {
             Articulos articulos = new Articulos();
             ArticulosNegocio negocio = new ArticulosNegocio();
-            lista_articulos = negocio.listarid((string)txt_buscarid.Text);
+            if (!(solonumeros(txt_buscarid.Text)))
+            lista_articulos = negocio.listarid(int.Parse(txt_buscarid.Text));
 
             try
             {
@@ -45,9 +46,11 @@ namespace tp2_grupal
                     cargarImagen(lista_articulos[0].imagen_a.Nombre_imagen);
                     rtb_Detalles.Text = lista_articulos[0].descripcion_a;
                 }
+                
             }
             catch (Exception ex)
             {
+              
                 MessageBox.Show("el id de articulo es incorrecto, intente nuevamente");
 
             }
@@ -122,6 +125,26 @@ namespace tp2_grupal
         {
 
         }
-        
+
+        private void txt_buscarid_TextChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+        public bool solonumeros(string cadena)
+        {
+            foreach (char c in cadena)
+            {
+                if (!(char.IsNumber(c)))
+                {
+                    MessageBox.Show("solo numeros por favor...");
+                    return true;
+                }
+
+            }
+            return false;
+
+        }
+      
     }
 }

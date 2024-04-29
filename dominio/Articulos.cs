@@ -22,8 +22,9 @@ namespace dominio
         public Categoria categoria_a { get; set; }
         [DisplayName("Marca")]
         public Marca marca_a { get; set; }
-        [DisplayName("Imagen")]
+        [DisplayName("Imagen1")]
         public Imagen imagen_a{ get; set; }
-      
+        [DisplayName("Imagen")]
+        public string urlimagen { get; set; }
     }
 }

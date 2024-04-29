@@ -29,20 +29,29 @@ namespace tp2_grupal
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgv_listar = new System.Windows.Forms.DataGridView();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.pbx_imagen = new System.Windows.Forms.PictureBox();
+            this.il_listarimagen = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_imagen)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_listar
             // 
+            this.dgv_listar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dgv_listar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_listar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_listar.Location = new System.Drawing.Point(12, 12);
+            this.dgv_listar.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgv_listar.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.dgv_listar.Location = new System.Drawing.Point(18, 48);
+            this.dgv_listar.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.dgv_listar.Name = "dgv_listar";
-            this.dgv_listar.Size = new System.Drawing.Size(362, 195);
+            this.dgv_listar.RowHeadersWidth = 72;
+            this.dgv_listar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_listar.Size = new System.Drawing.Size(503, 211);
             this.dgv_listar.TabIndex = 0;
             this.dgv_listar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_listar_CellContentClick);
             this.dgv_listar.SelectionChanged += new System.EventHandler(this.dgv_listar_SelectionChanged);
@@ -57,9 +66,10 @@ namespace tp2_grupal
             this.btn_salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(44, 232);
+            this.btn_salir.Location = new System.Drawing.Point(133, 340);
+            this.btn_salir.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(104, 46);
+            this.btn_salir.Size = new System.Drawing.Size(194, 65);
             this.btn_salir.TabIndex = 3;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = false;
@@ -75,9 +85,10 @@ namespace tp2_grupal
             this.btn_eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_eliminar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_eliminar.Location = new System.Drawing.Point(237, 232);
+            this.btn_eliminar.Location = new System.Drawing.Point(420, 340);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(104, 46);
+            this.btn_eliminar.Size = new System.Drawing.Size(194, 65);
             this.btn_eliminar.TabIndex = 4;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = false;
@@ -85,29 +96,37 @@ namespace tp2_grupal
             // 
             // pbx_imagen
             // 
-            this.pbx_imagen.Location = new System.Drawing.Point(380, 12);
+            this.pbx_imagen.Location = new System.Drawing.Point(539, 48);
+            this.pbx_imagen.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.pbx_imagen.Name = "pbx_imagen";
-            this.pbx_imagen.Size = new System.Drawing.Size(242, 195);
+            this.pbx_imagen.Size = new System.Drawing.Size(219, 216);
             this.pbx_imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbx_imagen.TabIndex = 5;
             this.pbx_imagen.TabStop = false;
             this.pbx_imagen.Click += new System.EventHandler(this.pbx_imagen_Click);
             // 
+            // il_listarimagen
+            // 
+            this.il_listarimagen.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.il_listarimagen.ImageSize = new System.Drawing.Size(100, 100);
+            this.il_listarimagen.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // F_listar_i
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(634, 304);
+            this.ClientSize = new System.Drawing.Size(776, 436);
             this.Controls.Add(this.pbx_imagen);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.dgv_listar);
+            this.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(650, 343);
-            this.MinimumSize = new System.Drawing.Size(650, 343);
+            this.MaximumSize = new System.Drawing.Size(800, 500);
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "F_listar_i";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listar Imagenes";
@@ -124,5 +143,6 @@ namespace tp2_grupal
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.PictureBox pbx_imagen;
+        private System.Windows.Forms.ImageList il_listarimagen;
     }
 }
