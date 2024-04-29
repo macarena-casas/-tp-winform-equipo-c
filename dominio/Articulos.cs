@@ -26,5 +26,6 @@ namespace dominio
         public Imagen imagen_a{ get; set; }
         [DisplayName("Imagen")]
         public string urlimagen { get; set; }
+        public int ID() { return Id_a; }
     }
 }

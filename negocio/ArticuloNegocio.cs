@@ -21,7 +21,7 @@ namespace negocio
             try
             {
                
-                datos.setearconsulta("select Codigo, Nombre, Precio, A.Id , A.Descripcion, I.ImagenUrl,M.Descripcion Marca,A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS AS A left JOIN MARCAS M ON A.IdMarca = M.Id left JOIN CATEGORIAS C ON A.IdCategoria = C.Id left JOIN IMAGENES I ON A.Id = I.Idarticulo");
+                datos.setearconsulta("select Codigo, Nombre, Precio, A.Id , A.Descripcion,M.Descripcion Marca,A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS AS A left JOIN MARCAS M ON A.IdMarca = M.Id left JOIN CATEGORIAS C ON A.IdCategoria = C.Id ");
                 datos.ejecutarlectura();               
                     while (datos.lector.Read())
                 {
@@ -31,15 +31,7 @@ namespace negocio
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Descripcion"];
                     aux.Id_a = (int)datos.lector["Id"];
-                    aux.urlimagen = (string)datos.lector["ImagenUrl"];
-
-                        aux.imagen_a = new Imagen();
-                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ImagenUrl"))))
-                    {
-                        aux.imagen_a.Nombre_imagen = (string)datos.lector["ImagenUrl"];
-             
-                    }
-
+                    
                     if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
                     {
                         aux.categoria_a = new Categoria();
@@ -53,9 +45,7 @@ namespace negocio
                         aux.marca_a.Nombre = (string)datos.lector["Marca"];
                         aux.marca_a.Codigo = (int)datos.lector["IdMarca"];
                     }
-                    
                     lista.Add(aux);
-
 
                 }
                 
@@ -109,7 +99,7 @@ namespace negocio
             Acceso_Datos datos = new Acceso_Datos();
             try
             {
-                datos.setearconsulta("select Codigo, A.Id , A.Nombre,A.Precio, A.Descripcion Detalle, M.Descripcion Marca, A.IdMarca idMarca, I.ImagenUrl, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I where A.Codigo = @Cod AND M.Id = A.IdMarca AND C.Id = A.IdCategoria AND I.IdArticulo = A.Id");
+                datos.setearconsulta("select Codigo, A.Id , A.Nombre,A.Precio, A.Descripcion Detalle, M.Descripcion Marca, A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C where A.Codigo = @Cod AND M.Id = A.IdMarca AND C.Id = A.IdCategoria");
                 datos.setearparametro("@Cod", cod);
                 datos.ejecutarlectura();
                 while (datos.lector.Read())
@@ -120,13 +110,7 @@ namespace negocio
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Detalle"];
                     aux.Id_a = (int)datos.lector["Id"];
-                    aux.imagen_a = new Imagen();
-                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ImagenUrl"))))
-                    {
-                        aux.imagen_a.Nombre_imagen = (string)datos.lector["ImagenUrl"];
-
-                    }
-
+                 
                     if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
                     {
                         aux.categoria_a = new Categoria();
@@ -160,7 +144,7 @@ namespace negocio
             Acceso_Datos datos = new Acceso_Datos();
             try
             {
-                datos.setearconsulta("select Codigo, A.Id , A.Nombre,A.Precio, A.Descripcion Detalle, M.Descripcion Marca, A.IdMarca idMarca, I.ImagenUrl, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I where A.Id=@Id AND M.Id = A.IdMarca AND C.Id = A.IdCategoria AND I.IdArticulo = A.Id");
+                datos.setearconsulta("select Codigo, A.Id , A.Nombre,A.Precio, A.Descripcion Detalle, M.Descripcion Marca, A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C where A.Id=@Id AND M.Id = A.IdMarca AND C.Id = A.IdCategoria ");
                 datos.setearparametro("@Id", id);
                 datos.ejecutarlectura();
                 while (datos.lector.Read())
@@ -171,14 +155,7 @@ namespace negocio
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Detalle"];
                     aux.Id_a = (int)datos.lector["Id"];
-                    aux.imagen_a = new Imagen();
-                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ImagenUrl"))))
-                    {
-                        aux.imagen_a.Nombre_imagen = (string)datos.lector["ImagenUrl"];
-
-                    }
-
-                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
+                   if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
                     {
                         aux.categoria_a = new Categoria();
                         aux.categoria_a.nombre_categoria = (string)datos.lector["Categoria"];
@@ -211,7 +188,7 @@ namespace negocio
             Acceso_Datos datos = new Acceso_Datos();
             try
             {
-                datos.setearconsulta("select Codigo, A.Id , A.Nombre, A.Precio, A.Descripcion Detalle, M.Descripcion Marca, A.IdMarca idMarca, I.ImagenUrl, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I where A.Nombre = @nombre AND M.Id = A.IdMarca AND C.Id = A.IdCategoria AND I.IdArticulo = A.Id");
+                datos.setearconsulta("select Codigo, A.Id , A.Nombre, A.Precio, A.Descripcion Detalle, M.Descripcion Marca, A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C where A.Nombre = @nombre AND M.Id = A.IdMarca AND C.Id = A.IdCategoria");
                 datos.setearparametro("@nombre", nom);
                 datos.ejecutarlectura();
                 while (datos.lector.Read())
@@ -222,12 +199,7 @@ namespace negocio
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Detalle"];
                     aux.Id_a = (int)datos.lector["Id"];
-                    aux.imagen_a = new Imagen();
-                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ImagenUrl"))))
-                    {
-                        aux.imagen_a.Nombre_imagen = (string)datos.lector["ImagenUrl"];
-
-                    }
+                 
                     if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
                     {
                         aux.categoria_a = new Categoria();

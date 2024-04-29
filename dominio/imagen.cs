@@ -17,7 +17,7 @@ namespace dominio
         public string nombre_articulo { get; set; }
         [DisplayName("Id Articulo")]
         public int id_articulo {  get; set; }
-
+        public int ID() { return id_articulo; }
         public override string ToString()
         {
             return Nombre_imagen;

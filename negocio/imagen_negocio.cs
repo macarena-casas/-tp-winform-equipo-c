@@ -53,7 +53,41 @@ namespace negocio
                 datos.cerrarconexion();
             }
         }
+        public List<Imagen> ListarItems(int ID)
+        {
+            List<Imagen> Lista_imagen = new List<Imagen>();
+            Acceso_Datos datos = new Acceso_Datos();
+            try
+            {
+                datos.setearconsulta("Select ImagenUrl, Id, IdArticulo from IMAGENES where IdArticulo  =@ID ");
+                datos.setearparametro("@ID", ID);
+                datos.ejecutarlectura();
+                while (datos.lector.Read())
+                {
+                    Imagen aux = new Imagen();
 
+                    aux.id_imagen = (int)datos.lector["Id"];
+                    aux.id_articulo = (int)datos.lector["IdArticulo"];
+                    aux.Nombre_imagen = (string)datos.lector["ImagenUrl"];
+
+                    Lista_imagen.Add(aux);
+
+
+                }
+                return Lista_imagen;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+
+            }
+            finally
+            {
+                datos.cerrarconexion();
+
+            }
+        }
         public List<Imagen> Listar()
         {
             List<Imagen> Lista_imagen = new List<Imagen>();

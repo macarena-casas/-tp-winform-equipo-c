@@ -1,134 +1,34 @@
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\tp2-grupal.exe.config
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\tp2-grupal.exe
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\tp2-grupal.pdb
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.AssemblyReference.cache
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FArticulos.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_marcas.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_categorias.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_Imagen.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_principal.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Properties.Resources.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.GenerateResource.cache
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.CoreCompileInputs.cache
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.exe
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.pdb
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_a.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Fdetalles_a.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FEliminar_a.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FListar_a.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FModificar_a.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_agregar_i.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_eliminar_i.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_listar_i.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_Agregar_M.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_Eliminar_M.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_Listar_M.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_Categoria.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_listar_c.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\dominio.dll
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\negocio.dll
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\dominio.pdb
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\negocio.pdb
-C:\Users\USURIO\Desktop\repo-trabajo grupal\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.CopyComplete
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\tp2-grupal.exe.config
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\tp2-grupal.exe
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\tp2-grupal.pdb
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\dominio.dll
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\negocio.dll
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\dominio.pdb
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\bin\Debug\negocio.pdb
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.AssemblyReference.cache
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_a.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_Categoria.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FArticulos.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FEliminar_a.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FListar_a.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FModificar_a.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_marcas.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_Agregar_M.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_categorias.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_Eliminar_M.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_Imagen.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_Listar_M.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_principal.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_agregar_i.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_eliminar_i.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_listar_c.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_listar_i.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Properties.Resources.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.GenerateResource.cache
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.CoreCompileInputs.cache
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.CopyComplete
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.exe
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.pdb
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Form1.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.frmbusqueda.resources
-C:\Users\USURIO\Desktop\repo-trabajo grupal - copia (2)\actividad_grupal2\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.frm_agruparpormarca.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\bin\Debug\tp2-grupal.exe.config
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\bin\Debug\tp2-grupal.exe
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\bin\Debug\tp2-grupal.pdb
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\bin\Debug\dominio.dll
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\bin\Debug\negocio.dll
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\bin\Debug\dominio.pdb
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\bin\Debug\negocio.pdb
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2-grupal.csproj.AssemblyReference.cache
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_a.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_Categoria.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FEliminar_a.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FListar_a.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FModificar_a.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.Form1.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.Frm_marcas.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.frmbusqueda.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.F_Agregar_M.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.frm_agruparpormarca.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.Frm_categorias.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.F_Eliminar_M.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.Frm_Imagen.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.F_Listar_M.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.Frm_principal.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.F_agregar_i.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.F_eliminar_i.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.F_listar_c.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.F_listar_i.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.Properties.Resources.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2-grupal.csproj.GenerateResource.cache
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2-grupal.csproj.CoreCompileInputs.cache
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2-grupal.csproj.Up2Date
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2-grupal.exe
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2-grupal.pdb
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\bin\Debug\tp2-grupal.exe.config
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\bin\Debug\tp2-grupal.exe
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\bin\Debug\tp2-grupal.pdb
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\bin\Debug\dominio.dll
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\bin\Debug\negocio.dll
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\bin\Debug\dominio.pdb
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\bin\Debug\negocio.pdb
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.AssemblyReference.cache
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_a.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_Categoria.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FEliminar_a.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FListar_a.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FModificar_a.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Form1.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_marcas.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.frmbusqueda.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_Agregar_M.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.frm_agruparpormarca.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_categorias.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_Eliminar_M.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_Imagen.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_Listar_M.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Frm_principal.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_agregar_i.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_eliminar_i.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_listar_c.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.F_listar_i.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.Properties.Resources.resources
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.GenerateResource.cache
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.csproj.CopyComplete
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.exe
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2-grupal.pdb
-C:\Users\Usuario\Desktop\repo\actividad_grupal2\tp2-grupal\obj\Debug\tp2_grupal.FArticulos1.resources
-C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\tp2-grupal\obj\Debug\tp2_grupal.FArticulos1.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\bin\Debug\tp2-grupal.exe.config
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\bin\Debug\tp2-grupal.exe
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\bin\Debug\tp2-grupal.pdb
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\bin\Debug\dominio.dll
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\bin\Debug\negocio.dll
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\bin\Debug\dominio.pdb
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\bin\Debug\negocio.pdb
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2-grupal.csproj.AssemblyReference.cache
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_a.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.FAgregar_Categoria.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.FEliminar_a.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.FListar_a.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.FModificar_a.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.Frm_marcas.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.F_Agregar_M.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.Frm_categorias.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.F_Eliminar_M.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.Frm_Imagen.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.F_Listar_M.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.Frm_principal.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.F_agregar_i.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.F_eliminar_i.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.F_listar_c.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.F_listar_i.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.Properties.Resources.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2-grupal.csproj.GenerateResource.cache
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2-grupal.csproj.CoreCompileInputs.cache
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2-grupal.csproj.CopyComplete
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2-grupal.exe
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2-grupal.pdb
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.frm_agruparpormarca.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.FArticulos1.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.Form1.resources
+C:\Users\USURIO\Desktop\repo nuevo\actividad_en_grupo2\tp2-grupal\obj\Debug\tp2_grupal.frmbusqueda.resources
