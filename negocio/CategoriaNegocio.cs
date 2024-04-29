@@ -49,13 +49,13 @@ namespace negocio
       Acceso_Datos datos = new Acceso_Datos();
       try
       {
-        datos.setearconsulta("insert into CATEGORIAS values('"+ nueva_Categoria.nombre_categoria + "')");
+             datos.setearconsulta("insert into CATEGORIAS values('"+ nueva_Categoria.nombre_categoria + "')");
         
-        datos.ejecutaraccion();
+             datos.ejecutaraccion();
      }
        catch (Exception ex)
       {
-        throw ex;
+              throw ex;
    
        }
       finally

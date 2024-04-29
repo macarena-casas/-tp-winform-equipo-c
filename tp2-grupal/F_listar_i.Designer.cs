@@ -66,10 +66,10 @@ namespace tp2_grupal
             this.btn_salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(133, 340);
+            this.btn_salir.Location = new System.Drawing.Point(423, 316);
             this.btn_salir.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(194, 65);
+            this.btn_salir.Size = new System.Drawing.Size(152, 43);
             this.btn_salir.TabIndex = 3;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = false;
@@ -85,10 +85,10 @@ namespace tp2_grupal
             this.btn_eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_eliminar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_eliminar.Location = new System.Drawing.Point(420, 340);
+            this.btn_eliminar.Location = new System.Drawing.Point(155, 316);
             this.btn_eliminar.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(194, 65);
+            this.btn_eliminar.Size = new System.Drawing.Size(152, 43);
             this.btn_eliminar.TabIndex = 4;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = false;
@@ -113,10 +113,10 @@ namespace tp2_grupal
             // 
             // F_listar_i
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(776, 436);
+            this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.pbx_imagen);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_salir);

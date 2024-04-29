@@ -16,3 +16,9 @@ C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\dominio\obj\Debug\dominio.csproj
 C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\dominio\obj\Debug\dominio.dll
 C:\Users\OEM\Desktop\grupo\-tp-winform-equipo-c\dominio\obj\Debug\dominio.pdb
+C:\Users\Usuario\Desktop\repo\actividad_grupal2\dominio\bin\Debug\dominio.dll
+C:\Users\Usuario\Desktop\repo\actividad_grupal2\dominio\bin\Debug\dominio.pdb
+C:\Users\Usuario\Desktop\repo\actividad_grupal2\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\repo\actividad_grupal2\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\repo\actividad_grupal2\dominio\obj\Debug\dominio.dll
+C:\Users\Usuario\Desktop\repo\actividad_grupal2\dominio\obj\Debug\dominio.pdb

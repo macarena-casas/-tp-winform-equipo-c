@@ -198,7 +198,7 @@ namespace tp2_grupal
             this.MinimumSize = new System.Drawing.Size(954, 671);
             this.Name = "Frm_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_principal";
+            this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.Frm_principal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

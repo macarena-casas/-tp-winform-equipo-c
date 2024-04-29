@@ -22,10 +22,10 @@ namespace tp2_grupal
         { 
             foreach(var item in Application.OpenForms)
             {
-                if(item.GetType() == typeof(FArticulos))
+                if(item.GetType() == typeof(FArticulos1))
                     return;
             }
-            FArticulos FArt = new FArticulos();
+            FArticulos1 FArt = new FArticulos1();
             FArt.Show();
         }
 

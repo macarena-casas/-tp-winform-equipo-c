@@ -22,13 +22,6 @@ namespace dominio
         {
             return Nombre_imagen;
         }
-        public void Cargar_imagen()
-        {
-
-        }
-        public void Eliminar_imagen()
-        {
-
-        }
+      
     }
 }

@@ -37,13 +37,7 @@ namespace tp2_grupal
             imagens = negocio.Listar();
             ListViewItem item = new ListViewItem(imagens[0].ToString());
             dgv_listar.DataSource = imagens;
-           /*
-
-             
-                    item.SubItems.Add(imagens[0].ToString());
-               
-                lv_imagen.Items.Add(item);*/
-     
+           
         }
 
         

@@ -38,10 +38,11 @@
             // 
             // dgv_agruparmarca
             // 
-            this.dgv_agruparmarca.BackgroundColor = System.Drawing.Color.Silver;
+            this.dgv_agruparmarca.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dgv_agruparmarca.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_agruparmarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_agruparmarca.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgv_agruparmarca.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.dgv_agruparmarca.Location = new System.Drawing.Point(30, 118);
             this.dgv_agruparmarca.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_agruparmarca.Name = "dgv_agruparmarca";
@@ -118,7 +119,7 @@
             this.MaximumSize = new System.Drawing.Size(753, 307);
             this.MinimumSize = new System.Drawing.Size(753, 307);
             this.Name = "frm_agruparpormarca";
-            this.Text = "frm_agruparpormarca";
+            this.Text = "Agrupar por Marca o Categoria";
             this.Load += new System.EventHandler(this.frm_agruparpormarca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_agruparmarca)).EndInit();
             this.ResumeLayout(false);

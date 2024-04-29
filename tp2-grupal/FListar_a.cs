@@ -48,7 +48,7 @@ namespace tp2_grupal
             }
             catch (Exception ex)
             {
-                // MessageBox.Show(ex.ToString());ç
+               
                 throw ex;
                
             }

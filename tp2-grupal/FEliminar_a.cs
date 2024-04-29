@@ -29,6 +29,7 @@ namespace tp2_grupal
                 dgv_eliminara.DataSource = lista_articulos;
                 dgv_eliminara.Columns["Id_a"].Visible = false;
                 dgv_eliminara.Columns["imagen_a"].Visible = false;
+            cargarImagen(lista_articulos[0].imagen_a.Nombre_imagen);
                 
             }
             catch (Exception ex)
@@ -74,6 +75,30 @@ namespace tp2_grupal
 
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void PBox_A_Eliminar_Click(object sender, EventArgs e)
+        {
+          
+        }
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+
+                PBox_A_Eliminar.Load(imagen);
+
+            }
+            catch (Exception ex)
+            {
+                PBox_A_Eliminar.Load("https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg");
+            }
+        }
+
+        private void dgv_eliminara_SelectionChanged(object sender, EventArgs e)
+        {
+            Articulos seleccionado = (Articulos)dgv_eliminara.CurrentRow.DataBoundItem;
+            cargarImagen(seleccionado.imagen_a.Nombre_imagen);
         }
     }
 }

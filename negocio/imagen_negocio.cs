@@ -14,8 +14,6 @@ namespace negocio
     public class imagen_negocio
     {    
 
-       // private List<Imagen> imagenList;
-       //no se usaba y lo comente chequear
         public void eliminar(int id)
         {
             try
@@ -41,17 +39,14 @@ namespace negocio
             {
                 datos.setearconsulta("insert into IMAGENES(IdArticulo, ImagenUrl) values(@IdA, @Imagen)");
                 datos.setearparametro("@IdA", nuevo.id_articulo);
-               datos.setearparametro("@Imagen", nuevo.Nombre_imagen);
+                datos.setearparametro("@Imagen", nuevo.Nombre_imagen);
                 datos.ejecutaraccion();
-               // datos.setearconsulta("insert into IMAGENES(IdArticulo, ImagenUrl) values(" + nuevo.id_articulo + ",'"+ nuevo.Nombre_imagen + "')");
-               // datos.setearconsulta("select Nombres from ARTICULOS WHERE Id = @Id");
-                //datos.setearconsulta("insert into ARTICULOS(Nombre,Id)values ('" + nuevo.nombre_articulo + "','Id = @Id')");
-               //cambie la consulta y seteo de paraetros
+               
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
             finally
             {
@@ -72,12 +67,15 @@ namespace negocio
                 {
                     Imagen aux = new Imagen();
                     if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Nombre"))))
-                     aux.nombre_articulo = (string)datos.lector["Nombre"];
+                    {
+
+                    aux.nombre_articulo = (string)datos.lector["Nombre"];
                     aux.id_imagen = (int)datos.lector["Id"];
                     aux.id_articulo = (int)datos.lector["IdArticulo"];
                     aux.Nombre_imagen = (string)datos.lector["ImagenUrl"];
 
                     Lista_imagen.Add(aux);
+                    }
                 }
                 return Lista_imagen;
             }
@@ -93,6 +91,6 @@ namespace negocio
 
             }
         }
-        //------------------aca termina--------
+       
     }
 }

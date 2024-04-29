@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tp2_grupal
 {
-    public partial class FArticulos : Form
+    public partial class FArticulos1 : Form
     {
-        public FArticulos()
+        public FArticulos1()
         {
             InitializeComponent();
         }

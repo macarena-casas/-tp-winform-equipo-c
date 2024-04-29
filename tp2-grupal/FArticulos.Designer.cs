@@ -1,7 +1,7 @@
 ﻿
 namespace tp2_grupal
 {
-    partial class FArticulos
+    partial class FArticulos1
     {
         /// <summary>
         /// Required designer variable.
@@ -127,7 +127,7 @@ namespace tp2_grupal
             this.b_volver_a.UseVisualStyleBackColor = false;
             this.b_volver_a.Click += new System.EventHandler(this.button1_Click);
             // 
-            // FArticulos
+            // FArticulos1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -144,9 +144,9 @@ namespace tp2_grupal
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(395, 302);
             this.MinimumSize = new System.Drawing.Size(395, 302);
-            this.Name = "FArticulos";
+            this.Name = "FArticulos1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FArticulos";
+            this.Text = "Menu Articulos";
             this.Load += new System.EventHandler(this.FArticulos_Load);
             this.ResumeLayout(false);
 

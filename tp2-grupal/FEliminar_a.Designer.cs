@@ -33,7 +33,9 @@ namespace tp2_grupal
             this.b_eliminar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dgv_eliminara = new System.Windows.Forms.DataGridView();
+            this.PBox_A_Eliminar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_eliminara)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBox_A_Eliminar)).BeginInit();
             this.SuspendLayout();
             // 
             // l_codelim_a
@@ -41,9 +43,9 @@ namespace tp2_grupal
             this.l_codelim_a.AutoSize = true;
             this.l_codelim_a.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_codelim_a.ForeColor = System.Drawing.Color.White;
-            this.l_codelim_a.Location = new System.Drawing.Point(32, 56);
+            this.l_codelim_a.Location = new System.Drawing.Point(63, 56);
             this.l_codelim_a.Name = "l_codelim_a";
-            this.l_codelim_a.Size = new System.Drawing.Size(576, 33);
+            this.l_codelim_a.Size = new System.Drawing.Size(322, 19);
             this.l_codelim_a.TabIndex = 0;
             this.l_codelim_a.Text = "seleccione el articulo que desea eliminar:";
             // 
@@ -57,7 +59,7 @@ namespace tp2_grupal
             this.b_eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_eliminar.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_eliminar.Location = new System.Drawing.Point(126, 393);
+            this.b_eliminar.Location = new System.Drawing.Point(58, 362);
             this.b_eliminar.MaximumSize = new System.Drawing.Size(150, 44);
             this.b_eliminar.MinimumSize = new System.Drawing.Size(150, 44);
             this.b_eliminar.Name = "b_eliminar";
@@ -77,7 +79,7 @@ namespace tp2_grupal
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(382, 393);
+            this.button2.Location = new System.Drawing.Point(235, 362);
             this.button2.MaximumSize = new System.Drawing.Size(150, 44);
             this.button2.MinimumSize = new System.Drawing.Size(150, 44);
             this.button2.Name = "button2";
@@ -89,19 +91,35 @@ namespace tp2_grupal
             // 
             // dgv_eliminara
             // 
+            this.dgv_eliminara.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dgv_eliminara.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_eliminara.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_eliminara.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.dgv_eliminara.Location = new System.Drawing.Point(67, 112);
             this.dgv_eliminara.Name = "dgv_eliminara";
             this.dgv_eliminara.RowHeadersWidth = 72;
+            this.dgv_eliminara.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_eliminara.Size = new System.Drawing.Size(513, 201);
             this.dgv_eliminara.TabIndex = 4;
+            this.dgv_eliminara.SelectionChanged += new System.EventHandler(this.dgv_eliminara_SelectionChanged);
+            // 
+            // PBox_A_Eliminar
+            // 
+            this.PBox_A_Eliminar.Location = new System.Drawing.Point(432, 341);
+            this.PBox_A_Eliminar.Name = "PBox_A_Eliminar";
+            this.PBox_A_Eliminar.Size = new System.Drawing.Size(148, 121);
+            this.PBox_A_Eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBox_A_Eliminar.TabIndex = 5;
+            this.PBox_A_Eliminar.TabStop = false;
+            this.PBox_A_Eliminar.Click += new System.EventHandler(this.PBox_A_Eliminar_Click);
             // 
             // FEliminar_a
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(676, 536);
+            this.ClientSize = new System.Drawing.Size(684, 561);
+            this.Controls.Add(this.PBox_A_Eliminar);
             this.Controls.Add(this.dgv_eliminara);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.b_eliminar);
@@ -117,6 +135,7 @@ namespace tp2_grupal
             this.Text = "Eliminar Articulos";
             this.Load += new System.EventHandler(this.FEliminar_a_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_eliminara)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBox_A_Eliminar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,5 +147,6 @@ namespace tp2_grupal
         private System.Windows.Forms.Button b_eliminar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dgv_eliminara;
+        private System.Windows.Forms.PictureBox PBox_A_Eliminar;
     }
 }

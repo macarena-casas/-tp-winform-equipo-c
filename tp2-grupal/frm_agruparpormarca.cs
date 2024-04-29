@@ -62,16 +62,21 @@ namespace tp2_grupal
             lista_articulos =negocio.listar((Marca)cb_marcas.SelectedItem);
             try
             {
-                dgv_agruparmarca.DataSource = lista_articulos;
+                if (lista_articulos.Count != 0)
+                {
+                    dgv_agruparmarca.DataSource = lista_articulos;
                 dgv_agruparmarca.Columns["Id_a"].Visible = false;
                 dgv_agruparmarca.Columns["imagen_a"].Visible = false;
                 dgv_agruparmarca.Columns["urlimagen"].Visible = false;
-
-
+                }
+                else
+                {
+                    MessageBox.Show("La marca solicitada no cuenta con ningun articulo");
+                }
             }
             catch (Exception ex)
             {
-                // MessageBox.Show(ex.ToString());ç
+                
                 throw ex;
             }
 
@@ -85,7 +90,7 @@ namespace tp2_grupal
 
             try
             {
-                if (lista_articulos != null)
+                if (lista_articulos.Count!=0)
                 {
                     dgv_agruparmarca.DataSource = lista_articulos;
                     dgv_agruparmarca.Columns["Id_a"].Visible = false;
@@ -102,29 +107,14 @@ namespace tp2_grupal
             }
             catch (Exception ex)
             {
-                // MessageBox.Show(ex.ToString());ç
+                
                 throw ex;
             }
 
         }
 
         private void cb_categorias_SelectedIndexChanged(object sender, EventArgs e)
-        {/*
-           CategoriaNegocio categorianegocio = new CategoriaNegocio();
-
-            try
-            {
-
-                cb_categorias.DataSource = categorianegocio.listar();
-                cb_categorias.ValueMember = "Codigo";
-                cb_categorias.DisplayMember = "Nombre";
-
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }*/
+        {
 
         }
     }

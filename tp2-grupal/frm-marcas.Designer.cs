@@ -106,7 +106,7 @@
             this.MinimumSize = new System.Drawing.Size(480, 153);
             this.Name = "Frm_marcas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FMarcas";
+            this.Text = "Menu Marcas";
             this.Load += new System.EventHandler(this.Frm_marcas_Load);
             this.ResumeLayout(false);
 
